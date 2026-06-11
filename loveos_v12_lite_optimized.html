@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
+<title>Đức Hải & Ngọc Linh – V12 Lite LoveOS Invitation</title>
+<meta name="theme-color" content="#0d1018" />
+<meta name="description" content="Thiệp cưới V12 Lite LoveOS – Đức Hải & Ngọc Linh, 28.06.2026" />
+<meta property="og:title" content="Đức Hải & Ngọc Linh – Wedding Invitation V12 Lite" />
+<meta property="og:description" content="LoveOS iPhone Invitation – 28.06.2026" />
+<meta property="og:image" content="1.webp" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700;900&family=Great+Vibes&family=Playfair+Display:wght@500;600;700;800&display=swap&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#070910;
+  --phone:#0b0d12;
+  --screen:#fff7f1;
+  --cream:#fff9f4;
+  --milk:#fffefd;
+  --glass:rgba(255,255,255,.62);
+  --glass2:rgba(255,255,255,.82);
+  --ink:#281f1c;
+  --muted:#8b776f;
+  --rose:#d98496;
+  --rose2:#f6c7d1;
+  --blush:#ffe9ee;
+  --gold:#c5a06a;
+  --gold2:#efd9a3;
+  --violet:#b9afe9;
+  --green:#9bd8c0;
+  --line:rgba(197,160,106,.24);
+  --shadow:0 28px 70px rgba(83,45,33,.20);
+  --soft:0 14px 34px rgba(83,45,33,.12);
+  --radius:36px;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --spring:cubic-bezier(.34,1.56,.64,1);
+  --sans:'DM Sans',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --serif:'Playfair Display',Georgia,serif;
+  --script:'Great Vibes',cursive;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden}
+body{
+  font-family:var(--sans);
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 18% 6%,rgba(246,199,209,.28),transparent 30%),
+    radial-gradient(circle at 82% 14%,rgba(239,217,163,.22),transparent 28%),
+    radial-gradient(circle at 50% 100%,rgba(185,175,233,.18),transparent 38%),
+    linear-gradient(145deg,#070910,#151827 55%,#0a0c13);
+  display:grid;
+  place-items:center;
+  -webkit-font-smoothing:antialiased;
+}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;border:none;background:none}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%;object-fit:cover}
+
+/* DEVICE */
+.device-wrap{
+  width:min(440px,100vw);
+  height:min(920px,100svh);
+  display:grid;
+  place-items:center;
+  padding:12px;
+  position:relative;
+}
+.device-glow{
+  position:absolute;
+  inset:auto 0 4vh;
+  width:78%;height:42%;
+  margin:auto;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(246,199,209,.34),transparent 70%);
+  filter:blur(34px);
+  pointer-events:none;
+}
+.phone{
+  width:100%;height:100%;
+  max-width:430px;max-height:900px;
+  background:linear-gradient(145deg,#252934,#050608 34%,#151822 80%,#393d47);
+  border-radius:58px;
+  padding:10px;
+  box-shadow:
+    0 48px 90px rgba(0,0,0,.50),
+    inset 0 0 0 1px rgba(255,255,255,.14),
+    inset 0 0 0 2px rgba(0,0,0,.45);
+  position:relative;
+  overflow:hidden;
+}
+.phone:before{
+  content:'';
+  position:absolute;
+  left:12px;right:12px;top:8px;height:52%;
+  border-radius:50px 50px 20px 20px;
+  background:linear-gradient(105deg,rgba(255,255,255,.18),transparent 24%,transparent 70%,rgba(255,255,255,.08));
+  pointer-events:none;
+  z-index:20;
+  mix-blend-mode:screen;
+}
+.phone-buttons:before,.phone-buttons:after{
+  content:'';position:absolute;background:#1a1d27;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)
+}
+.phone-buttons:before{left:-3px;top:122px;width:4px;height:72px}
+.phone-buttons:after{right:-3px;top:164px;width:4px;height:108px}
+.screen{
+  width:100%;height:100%;
+  border-radius:48px;
+  overflow:hidden;
+  position:relative;
+  background:#111;
+  isolation:isolate;
+}
+.dynamic-island{
+  position:absolute;
+  top:12px;left:50%;
+  transform:translateX(-50%);
+  width:122px;height:36px;
+  border-radius:999px;
+  background:#050506;
+  z-index:2000;
+  box-shadow:0 6px 16px rgba(0,0,0,.28),inset 0 0 0 1px rgba(255,255,255,.04);
+  transition:width .55s var(--spring),height .55s var(--spring),top .55s var(--spring),background .4s;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+}
+.dynamic-island .island-mini{
+  color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.02em;opacity:0;transform:scale(.9);transition:.35s var(--ease);white-space:nowrap
+}
+.dynamic-island.active{width:236px;height:52px;top:10px;background:#09090b}
+.dynamic-island.active .island-mini{opacity:1;transform:none}
+.dynamic-island.music{width:270px;height:58px;background:#050506}
+.dynamic-island.music .island-mini{opacity:1}
+.statusbar{
+  position:absolute;top:14px;left:0;right:0;z-index:1200;
+  height:34px;display:flex;justify-content:space-between;align-items:center;
+  padding:0 28px;color:#fff;font-size:.78rem;font-weight:800;letter-spacing:-.02em;
+  pointer-events:none;text-shadow:0 1px 10px rgba(0,0,0,.26);
+}
+.status-icons{display:flex;align-items:center;gap:5px}
+.signal{display:flex;gap:2px;align-items:end;height:12px}
+.signal i{display:block;width:3px;border-radius:2px;background:currentColor}.signal i:nth-child(1){height:4px}.signal i:nth-child(2){height:7px}.signal i:nth-child(3){height:10px}.signal i:nth-child(4){height:12px}
+.battery{width:22px;height:11px;border:1.8px solid currentColor;border-radius:3px;position:relative;margin-left:2px}.battery:after{content:'';position:absolute;right:-4px;top:3px;width:2px;height:4px;background:currentColor;border-radius:1px}.battery:before{content:'';position:absolute;left:2px;top:2px;bottom:2px;width:13px;background:currentColor;border-radius:1.5px}
+
+/* SHARED LAYERS */
+.wallpaper{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(to bottom,rgba(10,10,15,.06),rgba(10,10,15,.22) 38%,rgba(10,10,15,.56)),
+    url('1.webp') center top/cover no-repeat;
+  filter:saturate(1.04);
+}
+.wallpaper:after{
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(circle at 50% 18%,rgba(255,255,255,.18),transparent 32%),linear-gradient(to top,rgba(0,0,0,.44),transparent 55%);
+}
+.petal-layer,.heart-layer,.confetti-layer{position:absolute;inset:0;z-index:1800;pointer-events:none;overflow:hidden}
+.petal,.heart,.spark{
+  position:absolute;will-change:transform,opacity;pointer-events:none;
+}
+.petal{animation:fall var(--d,8s) linear forwards;font-size:16px;opacity:0}
+@keyframes fall{0%{opacity:0;transform:translateY(-38px) translateX(0) rotate(0) scale(.9)}12%{opacity:.88}88%{opacity:.74}100%{opacity:0;transform:translateY(108%) translateX(var(--x,38px)) rotate(var(--r,360deg)) scale(1.12)}}
+.heart{font-size:1.8rem;animation:rise 1.35s var(--ease) forwards;text-shadow:0 8px 18px rgba(0,0,0,.12)}
+@keyframes rise{from{opacity:1;transform:translateY(0) scale(.86)}to{opacity:0;transform:translateY(-142px) scale(1.8)}}
+.spark{width:8px;height:8px;border-radius:50%;background:var(--rose2);animation:spark .95s var(--ease) forwards;box-shadow:0 0 18px currentColor}
+@keyframes spark{to{opacity:0;transform:translate(var(--x),var(--y)) scale(.2)}}
+
+/* LOCK SCREEN */
+.lock-screen,.home-screen,.wedding-app{position:absolute;inset:0;overflow:hidden}
+.lock-screen{z-index:900;background:#111;transition:transform .9s var(--ease),opacity .9s var(--ease),filter .9s var(--ease)}
+.phone.unlocked .lock-screen{transform:translateY(-105%);opacity:0;filter:blur(12px);pointer-events:none}
+.lock-content{position:relative;z-index:4;height:100%;display:flex;flex-direction:column;align-items:center;text-align:center;color:#fff;padding:72px 22px 28px}
+.lock-date{font-size:.86rem;font-weight:700;text-shadow:0 3px 18px rgba(0,0,0,.25)}
+.lock-time{font-size:5.3rem;line-height:.95;letter-spacing:-.08em;font-weight:800;margin-top:.18rem;text-shadow:0 14px 34px rgba(0,0,0,.32)}
+.lock-widget{
+  margin-top:1.1rem;width:min(330px,88%);padding:1rem;
+  border-radius:30px;background:rgba(255,255,255,.20);border:1px solid rgba(255,255,255,.24);
+  backdrop-filter:blur(18px);box-shadow:0 20px 50px rgba(0,0,0,.18);
+}
+.lock-widget small{display:block;letter-spacing:.24em;text-transform:uppercase;font-size:.58rem;font-weight:900;color:rgba(255,255,255,.78)}
+.lock-widget h1{font-family:var(--serif);font-size:2.32rem;line-height:.95;margin:.36rem 0 .24rem;letter-spacing:-.06em}.lock-widget h1 span{display:block;font-family:var(--script);font-weight:400;font-size:1.15em;color:#ffd4dd;margin-top:.08rem}
+.lock-widget p{font-size:.82rem;line-height:1.55;color:rgba(255,255,255,.82)}
+.lockscreen-spacer{flex:1}
+.unlock-pill{
+  width:min(330px,88%);height:58px;border-radius:999px;
+  
+  background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.26);
+  backdrop-filter:blur(20px);color:#fff;display:flex;align-items:center;justify-content:center;gap:.55rem;
+  font-size:.82rem;font-weight:800;box-shadow:0 16px 38px rgba(0,0,0,.18);position:relative;overflow:hidden;
+}
+.unlock-pill:before{content:'';position:absolute;inset:6px auto 6px 7px;width:46px;border-radius:50%;background:rgba(255,255,255,.34);box-shadow:0 8px 18px rgba(0,0,0,.13);animation:unlockNudge 1.7s ease-in-out infinite}
+.unlock-pill span{position:relative;z-index:2;text-shadow:0 1px 10px rgba(0,0,0,.20);padding-left:42px}
+@keyframes unlockNudge{0%,100%{transform:translateX(0)}45%{transform:translateX(26px)}}
+.lock-hint{margin-top:.8rem;color:rgba(255,255,255,.72);font-size:.72rem}.lock-actions{width:min(330px,88%);display:flex;justify-content:space-between;margin-top:1rem}.lock-bubble{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:rgba(0,0,0,.28);backdrop-filter:blur(12px);font-size:1.2rem}
+
+/* HOME SCREEN */
+.home-screen{z-index:100;background:#111;color:#fff;opacity:0;pointer-events:none;transition:.55s var(--ease)}
+.phone.unlocked .home-screen{opacity:1;pointer-events:auto}
+.phone.app-open .home-screen{transform:scale(1.18);opacity:0;filter:blur(20px);pointer-events:none}
+.home-blur{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(15,16,25,.08),rgba(15,16,25,.50)),url('1.webp') center top/cover no-repeat;filter:saturate(1.04)}
+.home-content{position:relative;z-index:3;height:100%;padding:72px 18px 22px;display:flex;flex-direction:column}
+.widget-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:.82rem;margin-top:.4rem}
+.ios-widget{border-radius:28px;background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(24px);box-shadow:0 16px 36px rgba(0,0,0,.15);padding:1rem;min-height:132px;overflow:hidden;position:relative}.ios-widget:after{content:'';position:absolute;inset:auto -20% -50% -20%;height:80%;background:radial-gradient(circle,rgba(255,255,255,.24),transparent 62%)}
+.widget-date b{display:block;font-size:3.4rem;line-height:.82;letter-spacing:-.08em}.widget-date span{font-size:.76rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.widget-count small{font-size:.62rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.72)}.widget-count strong{display:block;font-size:2rem;line-height:.96;margin-top:.42rem}.widget-count em{font-style:normal;font-size:.78rem;color:rgba(255,255,255,.76)}
+.app-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem .82rem;margin-top:1.4rem;text-align:center}.app-icon{display:grid;gap:.42rem;justify-items:center;color:#fff;font-size:.64rem;font-weight:800;text-shadow:0 2px 8px rgba(0,0,0,.25)}.icon-box{width:58px;height:58px;border-radius:17px;display:grid;place-items:center;font-size:1.55rem;box-shadow:0 12px 24px rgba(0,0,0,.20),inset 0 1px 0 rgba(255,255,255,.28);background:linear-gradient(135deg,#fff7f1,#f6c7d1)}.icon-box.love{font-family:var(--serif);font-weight:800;color:#fff;background:linear-gradient(135deg,#f6c7d1,#d98496 65%,#c5a06a)}.icon-box.map{background:linear-gradient(135deg,#9bd8c0,#4db291)}.icon-box.photo{background:linear-gradient(135deg,#b9afe9,#796be0)}.icon-box.note{background:linear-gradient(135deg,#efd9a3,#c5a06a)}.icon-box.music{background:linear-gradient(135deg,#1f2230,#d98496)}
+.home-dock{margin-top:auto;height:78px;border-radius:30px;background:rgba(255,255,255,.20);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(24px);display:flex;align-items:center;justify-content:space-around;padding:0 .9rem}.home-dock .icon-box{width:56px;height:56px;border-radius:18px}
+.open-toast{position:absolute;left:50%;bottom:112px;transform:translateX(-50%);padding:.64rem .9rem;border-radius:999px;background:rgba(0,0,0,.32);backdrop-filter:blur(16px);font-size:.76rem;font-weight:800;white-space:nowrap;animation:pulseText 1.8s ease-in-out infinite}@keyframes pulseText{50%{opacity:.62;transform:translateX(-50%) translateY(-3px)}}
+
+/* WEDDING APP */
+.wedding-app{z-index:500;background:var(--screen);transform:scale(.42) translateY(52%);opacity:0;border-radius:38px;transition:transform .78s var(--spring),opacity .45s var(--ease),border-radius .78s var(--ease);pointer-events:none;color:var(--ink)}
+.phone.app-open .wedding-app{transform:none;opacity:1;border-radius:0;pointer-events:auto}
+.app-scroll{height:100%;overflow-y:auto;scroll-behavior:smooth;background:
+  radial-gradient(circle at 0% 8%,rgba(255,233,238,.96),transparent 30%),
+  radial-gradient(circle at 100% 14%,rgba(239,217,163,.58),transparent 34%),
+  linear-gradient(180deg,#fff9f4,#fffefd 42%,#fff0f4);position:relative;padding-bottom:94px;overscroll-behavior:contain}
+.app-scroll::-webkit-scrollbar{width:0}
+.app-topbar{position:sticky;top:0;z-index:800;min-height:68px;padding:14px 18px 10px;display:flex;align-items:flex-end;justify-content:space-between;background:linear-gradient(to bottom,rgba(255,249,244,.94),rgba(255,249,244,.72),transparent);backdrop-filter:blur(18px)}
+.app-brand{display:flex;align-items:center;gap:.7rem}.mini-logo{width:38px;height:38px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--rose2),var(--rose));color:#fff;font-family:var(--serif);font-weight:800;box-shadow:0 10px 22px rgba(217,132,150,.24)}.brand-copy small{display:block;font-size:.55rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}.brand-copy b{font-family:var(--serif);font-size:1.05rem;letter-spacing:-.03em}.top-actions{display:flex;gap:.45rem}.top-actions button,.top-actions a{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.7);border:1px solid rgba(197,160,106,.18);box-shadow:0 6px 16px rgba(83,45,33,.08);font-weight:900}
+.section{position:relative;z-index:2;padding:4.2rem 1.08rem}.section:first-of-type{padding-top:.6rem}.kicker{display:block;text-align:center;color:var(--gold);font-weight:900;letter-spacing:.28em;text-transform:uppercase;font-size:.58rem}.title{display:block;text-align:center;font-family:var(--serif);font-size:clamp(2.35rem,12vw,4rem);line-height:.88;letter-spacing:-.075em;font-weight:800;margin-top:.35rem}.script{display:block;text-align:center;font-family:var(--script);font-size:2.9rem;line-height:.78;color:var(--rose);margin-top:.14rem}.sub{max-width:330px;margin:.95rem auto 0;text-align:center;color:var(--muted);font-size:.84rem;line-height:1.72}
+[data-reveal]{opacity:0;transform:translateY(34px);filter:blur(10px);transition:opacity .85s var(--ease),transform .85s var(--ease),filter .85s var(--ease)}[data-reveal].show{opacity:1;transform:none;filter:none}[data-reveal="left"]{transform:translateX(-34px);filter:blur(10px)}[data-reveal="right"]{transform:translateX(34px);filter:blur(10px)}[data-reveal="zoom"]{transform:scale(.88);filter:blur(12px)}[data-delay="1"]{transition-delay:.1s}[data-delay="2"]{transition-delay:.22s}[data-delay="3"]{transition-delay:.36s}[data-delay="4"]{transition-delay:.5s}
+
+/* HERO */
+
+.hero{
+  min-height:calc(100svh - 90px);
+  display:block;
+  padding:0;
+  overflow:hidden;
+  background:#fff0f4;
+  isolation:isolate;
+}
+.hero-photo{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-position:center top;
+  transform:scale(1.018);
+  filter:saturate(1.04) contrast(1.02) brightness(1.02);
+  animation:heroBreath 15s ease-in-out infinite alternate;
+}
+.hero:before{
+  content:'';
+  position:absolute;
+  inset:0;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(to bottom,transparent 0%,transparent 50%,rgba(34,24,21,.16) 72%,rgba(18,12,12,.60) 100%),
+    radial-gradient(circle at 8% 82%,rgba(var(--rose-rgb),.18),transparent 36%),
+    radial-gradient(circle at 92% 74%,rgba(var(--gold-rgb),.13),transparent 34%);
+}
+.hero:after{
+  content:'';
+  position:absolute;
+  left:0;right:0;bottom:0;
+  height:42%;
+  z-index:1;
+  pointer-events:none;
+  background:
+    linear-gradient(to top,rgba(0,0,0,.38),rgba(0,0,0,.12) 48%,transparent),
+    linear-gradient(90deg,rgba(0,0,0,.18),transparent 55%);
+}
+@keyframes heroBreath{
+  from{transform:scale(1.018) translateY(0)}
+  to{transform:scale(1.065) translateY(-7px)}
+}
+.hero-fx{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  pointer-events:none;
+  overflow:hidden;
+}
+.hero-glow{
+  position:absolute;
+  border-radius:50%;
+  filter:blur(14px);
+  opacity:.55;
+  mix-blend-mode:screen;
+  animation:glowDrift 8s ease-in-out infinite;
+}
+.hero-glow.g1{width:92px;height:92px;left:8%;bottom:22%;background:rgba(var(--rose-rgb),.34)}
+.hero-glow.g2{width:68px;height:68px;right:14%;bottom:32%;background:rgba(var(--gold-rgb),.24);animation-delay:1.2s}
+.hero-glow.g3{width:48px;height:48px;left:44%;top:18%;background:rgba(255,255,255,.30);animation-delay:2.1s}
+@keyframes glowDrift{
+  50%{transform:translateY(-22px) translateX(10px) scale(1.12);opacity:.75}
+}
+.hero-heart{
+  position:absolute;
+  color:rgba(255,255,255,.56);
+  font-size:1.25rem;
+  filter:drop-shadow(0 8px 18px rgba(0,0,0,.18));
+  animation:heroHeartFloat var(--hd,6s) ease-in-out infinite;
+}
+.hero-heart.h1{left:10%;top:22%;--hd:6.4s}
+.hero-heart.h2{left:84%;top:31%;font-size:1rem;--hd:7.2s;animation-delay:.8s}
+.hero-heart.h3{left:72%;bottom:28%;font-size:1.4rem;--hd:5.8s;animation-delay:1.6s}
+.hero-heart.h4{left:28%;bottom:38%;font-size:.92rem;--hd:7.8s;animation-delay:2.4s}
+.hero-heart.h5{left:52%;top:12%;font-size:.86rem;--hd:6.9s;animation-delay:3.2s}
+@keyframes heroHeartFloat{
+  0%,100%{transform:translate3d(0,0,0) scale(.92);opacity:.18}
+  35%{opacity:.72}
+  55%{transform:translate3d(10px,-42px,0) scale(1.15);opacity:.50}
+}
+.hero-shine{
+  position:absolute;
+  inset:-20% -60%;
+  z-index:2;
+  background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.26) 49%,transparent 56%);
+  transform:translateX(-55%) rotate(3deg);
+  animation:heroShine 6.8s ease-in-out infinite;
+  opacity:.45;
+}
+@keyframes heroShine{
+  0%,42%{transform:translateX(-55%) rotate(3deg);opacity:0}
+  58%{opacity:.52}
+  82%,100%{transform:translateX(55%) rotate(3deg);opacity:0}
+}
+.hero-composition{
+  position:relative;
+  z-index:3;
+  min-height:inherit;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  padding:clamp(74px,11vh,108px) 1.08rem 6.55rem 1.08rem;
+}
+.hero-topline{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:.8rem;
+  color:rgba(39,31,29,.74);
+  font-size:.56rem;
+  font-weight:900;
+  letter-spacing:.34em;
+  text-transform:uppercase;
+  text-shadow:0 2px 12px rgba(255,255,255,.72);
+}
+.hero-topline span:last-child{
+  letter-spacing:.22em;
+  color:rgba(var(--rose-rgb),.86);
+}
+.hero-copy{
+  max-width:320px;
+  text-align:left;
+  color:#fff;
+  text-shadow:0 10px 34px rgba(0,0,0,.34);
+  margin-bottom:clamp(8px,3vh,32px);
+}
+.hero-eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:.56rem;
+  color:rgba(255,255,255,.88);
+  font-size:.56rem;
+  font-weight:900;
+  letter-spacing:.36em;
+  text-transform:uppercase;
+  margin-bottom:.78rem;
+}
+.hero-eyebrow:before{
+  content:'';
+  width:34px;height:1px;
+  background:linear-gradient(90deg,var(--rose),rgba(255,255,255,.62),transparent);
+}
+.hero-title-free{
+  font-family:var(--serif);
+  font-size:clamp(2.66rem,13.4vw,4.36rem);
+  line-height:.86;
+  letter-spacing:-.065em;
+  font-weight:500;
+  color:#fff;
+  max-width:315px;
+}
+.hero-title-free .name-line{
+  display:block;
+}
+.hero-title-free i{
+  display:block;
+  font-family:var(--script);
+  font-size:.82em;
+  font-style:normal;
+  line-height:.62;
+  letter-spacing:0;
+  color:var(--rose);
+  text-shadow:0 8px 24px rgba(255,255,255,.22),0 8px 26px rgba(0,0,0,.18);
+  margin:.09em 0 .03em;
+  transform:translateX(86px);
+}
+.hero-copy p{
+  max-width:282px;
+  margin:1rem 0 0;
+  color:rgba(255,255,255,.88);
+  font-size:.81rem;
+  line-height:1.7;
+}
+.hero-date-line{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.42rem .68rem;
+  align-items:center;
+  margin-top:1rem;
+  color:rgba(255,255,255,.95);
+  font-size:.61rem;
+  font-weight:900;
+  letter-spacing:.21em;
+  text-transform:uppercase;
+}
+.hero-date-line span{
+  position:relative;
+  padding-bottom:.34rem;
+}
+.hero-date-line span:after{
+  content:'';
+  position:absolute;
+  left:0;right:.22em;bottom:0;height:1px;
+  background:linear-gradient(90deg,var(--rose),rgba(255,255,255,.56),transparent);
+}
+.hero-guest{
+  max-width:142px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.hero-pulse{
+  position:absolute;
+  left:1.08rem;
+  bottom:5.62rem;
+  z-index:4;
+  display:flex;
+  align-items:center;
+  gap:.48rem;
+  color:rgba(255,255,255,.78);
+  font-size:.62rem;
+  font-weight:800;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.hero-pulse i{
+  width:8px;height:8px;
+  border-radius:50%;
+  background:var(--rose);
+  box-shadow:0 0 0 0 rgba(var(--rose-rgb),.55);
+  animation:pulseDot 1.8s ease-out infinite;
+}
+@keyframes pulseDot{
+  70%{box-shadow:0 0 0 12px rgba(var(--rose-rgb),0)}
+  100%{box-shadow:0 0 0 0 rgba(var(--rose-rgb),0)}
+}
+.scroll-cue{
+  position:absolute;
+  right:1.05rem;
+  bottom:5.28rem;
+  z-index:4;
+  color:rgba(255,255,255,.86);
+  font-size:1.35rem;
+  text-shadow:0 7px 18px rgba(0,0,0,.25);
+  animation:cue 1.6s ease-in-out infinite;
+}
+@keyframes cue{50%{transform:translateY(7px)}}
+@media(max-width:390px){
+  .hero-composition{padding:76px .95rem 6.35rem .95rem}
+  .hero-topline{font-size:.50rem;letter-spacing:.26em}
+  .hero-topline span:last-child{letter-spacing:.16em}
+  .hero-title-free{font-size:clamp(2.36rem,13.2vw,3.72rem);max-width:270px;letter-spacing:-.056em}
+  .hero-title-free i{transform:translateX(70px);font-size:.78em}
+  .hero-copy{max-width:274px}
+  .hero-copy p{max-width:244px;font-size:.78rem}
+  .hero-pulse{bottom:5.35rem;font-size:.56rem}
+}
+
+/* CARDS */
+.card{background:rgba(255,255,255,.75);border:1px solid rgba(197,160,106,.22);border-radius:34px;box-shadow:var(--soft);backdrop-filter:blur(15px);overflow:hidden}.card-pad{padding:1.08rem}.grid{display:grid;gap:.82rem}.audio-card{margin-top:1.7rem}.audio-row{display:grid;grid-template-columns:82px 1fr;gap:1rem;align-items:center}.record{width:82px;height:82px;border-radius:50%;padding:6px;background:conic-gradient(from 90deg,#fff,var(--rose2),var(--gold2),#fff);box-shadow:0 12px 28px rgba(83,45,33,.12);position:relative}.record img{width:100%;height:100%;border-radius:50%;border:3px solid #fff;animation:spin 9s linear infinite;animation-play-state:paused}.record.playing img{animation-play-state:running}.record:after{content:'';position:absolute;inset:50% auto auto 50%;width:14px;height:14px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);box-shadow:0 0 0 1px rgba(0,0,0,.08)}@keyframes spin{to{transform:rotate(360deg)}}.song-small{font-size:.56rem;font-weight:900;letter-spacing:.21em;text-transform:uppercase;color:var(--gold)}.song-title{font-family:var(--serif);font-size:1.45rem;font-weight:700;letter-spacing:-.03em;margin:.15rem 0}.song-sub{color:var(--muted);font-size:.74rem}.wave{height:22px;display:flex;align-items:center;gap:3px;margin:.7rem 0 .55rem}.wave i{width:4px;height:8px;border-radius:999px;background:linear-gradient(to top,var(--rose),var(--gold2));opacity:.58;animation:wave 1s ease-in-out infinite;animation-play-state:paused}.wave.playing i{animation-play-state:running}.wave i:nth-child(2n){animation-delay:.12s}.wave i:nth-child(3n){animation-delay:.24s}.wave i:nth-child(5n){animation-delay:.36s}@keyframes wave{50%{height:22px;opacity:1}}.audio-actions{display:flex;gap:.5rem}.audio-actions button{border-radius:999px;padding:.62rem .82rem;background:#fff7f1;border:1px solid rgba(197,160,106,.18);font-weight:900}.audio-actions #playBtn{flex:1;background:linear-gradient(135deg,var(--rose2),var(--rose));color:#fff;border:none;box-shadow:0 12px 24px rgba(217,132,150,.22)}
+.ticket{margin-top:.82rem;position:relative}.ticket:before,.ticket:after{content:'';position:absolute;top:51%;width:28px;height:28px;border-radius:50%;background:var(--screen);border:1px solid rgba(197,160,106,.16);z-index:2}.ticket:before{left:-15px}.ticket:after{right:-15px}.ticket-top{display:flex;justify-content:space-between;gap:1rem;padding:1rem 1rem .8rem;color:var(--muted);font-size:.56rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase}.stamp{color:var(--rose);border:1px solid rgba(217,132,150,.32);border-radius:999px;padding:.25rem .55rem;transform:rotate(-5deg);white-space:nowrap}.guest-name{font-family:var(--serif);font-size:2.35rem;line-height:1;letter-spacing:-.06em;color:var(--rose);margin:.45rem 0 .78rem}.ticket-label{font-size:.61rem;font-weight:900;letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}.ticket p{color:var(--muted);font-size:.84rem;line-height:1.7}.ticket-foot{display:grid;grid-template-columns:1fr 1fr;border-top:1px dashed rgba(197,160,106,.32)}.ticket-foot div{padding:.82rem 1rem}.ticket-foot div+div{border-left:1px dashed rgba(197,160,106,.32)}.ticket-foot b{display:block;font-family:var(--serif);font-size:1.1rem}.ticket-foot span{display:block;color:var(--muted);font-size:.56rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;margin-top:.12rem}
+
+/* DATE */
+.calendar{margin-top:1.8rem;padding:1.05rem}.month-head{display:flex;justify-content:space-between;align-items:end;padding:.25rem .05rem .95rem}.month-head strong{font-family:var(--serif);font-size:2.65rem;line-height:.9;color:var(--rose);letter-spacing:-.07em}.month-head span{font-size:.62rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}.cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:.28rem;text-align:center}.cal-grid div{min-height:37px;border-radius:999px;display:grid;place-items:center;font-size:.78rem}.cal-grid .dow{min-height:24px;color:var(--gold);font-size:.55rem;font-weight:900}.cal-grid .empty{opacity:0}.cal-grid .mark{background:linear-gradient(135deg,var(--rose2),var(--rose));color:#fff;box-shadow:0 10px 24px rgba(217,132,150,.24);position:relative}.cal-grid .mark:after{content:'LOVE';position:absolute;top:-16px;left:50%;transform:translateX(-50%);background:#fff;border:1px solid rgba(217,132,150,.16);border-radius:999px;color:var(--rose);font-size:.44rem;font-weight:900;padding:.12rem .36rem;box-shadow:0 6px 12px rgba(0,0,0,.08)}.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:.5rem;margin-top:.95rem}.cd{background:#fff8f1;border:1px solid rgba(197,160,106,.18);border-radius:20px;text-align:center;padding:.75rem .2rem}.cd b{display:block;font-family:var(--serif);font-size:1.48rem;line-height:1;color:var(--rose)}.cd span{display:block;font-size:.52rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:.26rem}
+
+/* COUPLE */
+.couple-wall{margin-top:1.8rem;display:grid;grid-template-columns:1fr 1fr;gap:.75rem}.portrait{min-height:355px;border-radius:36px;overflow:hidden;position:relative;box-shadow:var(--soft);background:#fff;border:1px solid rgba(197,160,106,.14)}.portrait img{width:100%;height:100%;object-position:center top}.plaque{position:absolute;left:.62rem;right:.62rem;bottom:.62rem;text-align:center;border-radius:24px;background:rgba(255,255,255,.74);border:1px solid rgba(197,160,106,.18);padding:.82rem .45rem;backdrop-filter:blur(14px)}.plaque small{font-size:.52rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}.plaque h3{font-family:var(--serif);font-size:1.25rem;line-height:1.05}.note-card{margin-top:.82rem;padding:1rem;text-align:center;color:var(--muted);font-size:.84rem;line-height:1.7}
+
+/* CEREMONY */
+.segment{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin:1.7rem 0 .85rem;background:rgba(255,255,255,.54);border:1px solid rgba(197,160,106,.16);border-radius:999px;padding:.35rem}.segment button{border-radius:999px;padding:.72rem .5rem;font-weight:900;color:var(--muted)}.segment button.active{background:linear-gradient(135deg,var(--gold),#d7b478);color:#fff;box-shadow:0 10px 20px rgba(197,160,106,.22)}.cer-stage{min-height:500px;position:relative}.cer-card{position:absolute;inset:0;opacity:0;transform:translateY(22px) scale(.96);transition:.55s var(--ease);pointer-events:none}.cer-card.active{opacity:1;transform:none;pointer-events:auto}.cer-photo{height:220px;border-radius:36px 36px 0 0;overflow:hidden;box-shadow:var(--soft)}.cer-photo img{width:100%;height:100%;object-position:center top}.cer-info{position:relative;margin-top:-32px;z-index:2;padding:1.18rem;border-radius:32px}.cer-label{font-size:.58rem;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}.cer-title{font-family:var(--serif);font-size:2rem;line-height:1;letter-spacing:-.05em;margin:.4rem 0 .8rem}.cer-row{display:flex;gap:.65rem;align-items:flex-start;background:#fff8f1;border:1px solid rgba(197,160,106,.14);border-radius:20px;padding:.78rem;margin:.62rem 0}.cer-ico{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:rgba(255,233,238,.65);flex-shrink:0}.cer-row b{display:block;font-size:.84rem}.cer-row span{display:block;color:var(--muted);font-size:.76rem;line-height:1.5;margin-top:.08rem}.cer-actions{display:grid;grid-template-columns:1fr 1fr;gap:.62rem;margin-top:.82rem}.cer-actions a{text-align:center;border-radius:999px;padding:.78rem .45rem;font-weight:900;font-size:.78rem;background:#fff;border:1px solid rgba(197,160,106,.18)}.cer-actions a:first-child{background:linear-gradient(135deg,var(--rose2),var(--rose));color:#fff;border:none}
+
+/* STORY */
+.story{position:relative;margin-top:1.8rem;padding:.4rem 0}.story-line{position:absolute;left:25px;top:0;bottom:0;width:2px;background:rgba(197,160,106,.15)}.story-line span{display:block;width:100%;height:var(--progress,0%);background:linear-gradient(to bottom,var(--rose2),var(--gold),var(--rose));border-radius:999px}.story-item{display:grid;grid-template-columns:56px 1fr;gap:.68rem;margin-bottom:1.15rem}.story-dot{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#fff;border:1px solid rgba(197,160,106,.24);box-shadow:0 9px 20px rgba(83,45,33,.09);color:var(--rose);font-weight:900;z-index:2}.story-card{padding:.95rem;border-radius:26px}.story-year{font-size:.56rem;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}.story-title{font-family:var(--serif);font-size:1.38rem;line-height:1.1;margin:.25rem 0}.story-desc{color:var(--muted);font-size:.8rem;line-height:1.64}.story-card img{margin-top:.75rem;width:100%;height:150px;border-radius:19px;object-position:center top}
+
+/* GALLERY */
+.gallery{margin-top:1.8rem;display:grid;grid-template-columns:1.05fr .95fr;gap:.68rem}.gallery-item{position:relative;overflow:hidden;border-radius:28px;box-shadow:var(--soft);background:#fff;border:1px solid rgba(197,160,106,.12);min-height:185px}.gallery-item img{width:100%;height:100%;object-position:center top;transition:transform .9s var(--ease)}.gallery-item:hover img{transform:scale(1.05)}.gallery-item.big{grid-column:1/3;height:330px;border-radius:40px}.gallery-item.tall{height:310px}.gallery-item.small{height:185px}.gallery-item.quote{padding:1rem;display:flex;flex-direction:column;justify-content:space-between;background:radial-gradient(circle at top left,rgba(255,233,238,.86),transparent 44%),linear-gradient(135deg,#fff,#fff8f1)}.gallery-item.quote b{font-family:var(--script);font-size:2.3rem;line-height:.95;color:var(--rose);font-weight:400}.gallery-item.quote p{color:var(--muted);font-size:.8rem;line-height:1.55}.photo-label{position:absolute;left:.8rem;right:.8rem;bottom:.8rem;border-radius:18px;background:rgba(255,255,255,.72);border:1px solid rgba(197,160,106,.18);backdrop-filter:blur(12px);padding:.65rem .75rem;font-size:.76rem;color:var(--muted)}
+
+/* GUIDE + RSVP */
+.palette{display:flex;justify-content:center;gap:.62rem;margin-top:1.25rem}.sw{width:54px;height:54px;border-radius:50%;border:3px solid #fff;box-shadow:0 9px 20px rgba(0,0,0,.08)}.guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:.68rem;margin-top:1.22rem}.guide-card{padding:.88rem;border-radius:24px}.guide-card i{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:rgba(255,233,238,.62);font-style:normal;margin-bottom:.58rem}.guide-card b{display:block;font-family:var(--serif);font-size:1.12rem;line-height:1.1}.guide-card span{display:block;color:var(--muted);font-size:.74rem;line-height:1.5;margin-top:.25rem}.rsvp-card{margin-top:1.6rem;padding:1.05rem}.field{margin-bottom:.85rem}.field label{display:block;font-size:.58rem;font-weight:900;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.38rem}.field input,.field textarea{width:100%;border:1px solid rgba(197,160,106,.20);background:#fff8f1;border-radius:18px;padding:.84rem .92rem;outline:none}.field textarea{min-height:92px;resize:none}.choice{display:grid;grid-template-columns:1fr 1fr;gap:.58rem}.choice label{letter-spacing:0;text-transform:none;font-size:.8rem;color:var(--ink);display:flex;align-items:center;gap:.42rem;background:#fff8f1;border:1px solid rgba(197,160,106,.16);border-radius:18px;padding:.74rem}.choice input{width:auto;accent-color:var(--rose)}.submit{width:100%;border-radius:999px;padding:.92rem;background:linear-gradient(135deg,var(--rose2),var(--rose));color:#fff;font-weight:900;box-shadow:0 12px 25px rgba(217,132,150,.22)}.rmsg{text-align:center;min-height:1.3em;margin-top:.62rem;color:var(--rose);font-size:.84rem}.wish-list{margin-top:.95rem;display:grid;gap:.58rem}.wish{background:#fff8f1;border:1px solid rgba(197,160,106,.13);border-radius:19px 19px 19px 4px;padding:.76rem .85rem}.wish b{color:var(--rose);font-size:.82rem}.wish p{font-size:.8rem;line-height:1.55;margin-top:.14rem;color:var(--muted)}
+
+/* GIFT */
+.envelope{margin:1.75rem auto 0;max-width:340px;height:220px;position:relative;perspective:900px}.env-back,.env-front,.env-flap{position:absolute;left:0;right:0;border-radius:24px}.env-back{inset:0;background:linear-gradient(135deg,#fff,#ffe9ee);border:1px solid rgba(197,160,106,.22);box-shadow:var(--shadow)}.env-front{bottom:0;height:132px;background:linear-gradient(135deg,#fff8f1,#f6c7d1);clip-path:polygon(0 0,50% 48%,100% 0,100% 100%,0 100%);z-index:3}.env-flap{top:0;height:132px;background:linear-gradient(135deg,#ffe9ee,#fff);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:top;z-index:4;transition:transform .75s var(--ease)}.envelope.open .env-flap{transform:rotateX(178deg)}.gift-card{position:absolute;left:24px;right:24px;bottom:30px;background:#fff;border:1px solid rgba(197,160,106,.16);border-radius:22px;padding:1rem;text-align:center;z-index:2;transition:transform .75s var(--ease)}.envelope.open .gift-card{transform:translateY(-75px)}.gift-card b{font-family:var(--serif)}.qr{width:88px;height:88px;margin:.45rem auto;border-radius:13px;background:linear-gradient(90deg,#222 10px,transparent 10px) 0 0/22px 22px,linear-gradient(#222 10px,transparent 10px) 0 0/22px 22px,#fff;border:8px solid #fff;box-shadow:0 0 0 1px rgba(0,0,0,.08)}.gift-card p{font-size:.78rem;color:var(--muted);line-height:1.5}.open-gift{display:block;margin:1rem auto 0;border-radius:999px;padding:.8rem 1.4rem;background:linear-gradient(135deg,var(--gold),#d7b478);color:#fff;font-weight:900;box-shadow:0 12px 24px rgba(197,160,106,.22)}
+
+/* CLOSING */
+.closing{min-height:calc(100svh - 86px);padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff0f4}.closing-bg{position:absolute;inset:0;width:100%;height:100%;object-position:center top}.closing:after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(255,249,244,.62),rgba(255,233,238,.28),rgba(255,249,244,.92)),radial-gradient(circle at 50% 48%,rgba(255,255,255,.1),rgba(197,160,106,.34))}.closing-content{position:relative;z-index:2;text-align:center;width:100%;padding:2rem 1.1rem}.thanks{font-family:var(--script);font-size:clamp(4.2rem,20vw,7rem);line-height:.82;color:#fff;text-shadow:0 12px 38px rgba(70,41,30,.22);margin:1rem 0 .7rem}.closing-names{font-family:var(--serif);font-size:1.75rem;font-weight:500}.closing-actions{display:flex;justify-content:center;gap:.55rem;flex-wrap:wrap;margin-top:1.2rem}.closing-actions a,.closing-actions button{border-radius:999px;padding:.78rem .95rem;background:rgba(255,255,255,.66);border:1px solid rgba(197,160,106,.18);backdrop-filter:blur(12px);font-weight:900;font-size:.8rem}
+
+/* LIVE + DOCK */
+.live{position:absolute;left:0;right:0;bottom:86px;z-index:900;display:grid;justify-items:start;gap:.32rem;padding:0 .85rem;pointer-events:none}.live-bubble{max-width:82%;background:rgba(255,255,255,.76);border:1px solid rgba(197,160,106,.16);border-radius:18px 18px 18px 5px;padding:.48rem .72rem;font-size:.76rem;color:var(--ink);backdrop-filter:blur(12px);box-shadow:0 8px 20px rgba(0,0,0,.06);animation:lb .35s var(--spring) both}.live-bubble b{color:var(--rose)}@keyframes lb{from{opacity:0;transform:translateX(-15px)}to{opacity:1;transform:none}}
+.app-dock{position:absolute;left:12px;right:12px;bottom:11px;z-index:1000;border-radius:30px;background:rgba(255,255,255,.74);border:1px solid rgba(197,160,106,.16);box-shadow:0 14px 36px rgba(83,45,33,.18);backdrop-filter:blur(22px);display:grid;grid-template-columns:1fr auto auto;gap:.5rem;align-items:center;padding:.55rem}.quick-wish{min-width:0;border:1px solid rgba(197,160,106,.18);background:rgba(255,249,244,.78);border-radius:999px;padding:.72rem .9rem;outline:none;font-size:.8rem}.dock-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--rose2),var(--rose));color:#fff;font-weight:900;box-shadow:0 10px 20px rgba(217,132,150,.22)}.dock-btn.secondary{background:#fff;color:var(--rose);border:1px solid rgba(197,160,106,.18);box-shadow:none}
+
+/* REDUCE MOTION */
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.phone.app-open .wedding-app,.phone.unlocked .home-screen{transform:none!important;opacity:1!important}}
+@media(max-width:390px){.device-wrap{padding:0}.phone{border-radius:0;padding:0;max-width:none;max-height:none}.screen{border-radius:0}.phone:before,.phone-buttons{display:none}.dynamic-island{top:10px}.statusbar{top:12px;padding:0 22px}.lock-time{font-size:4.7rem}.section{padding-left:1rem;padding-right:1rem}.couple-wall{grid-template-columns:1fr}.portrait{min-height:410px}.gallery{grid-template-columns:1fr}.gallery-item.big{grid-column:auto;height:285px}.gallery-item.tall,.gallery-item.small{height:230px}.ticket-foot{grid-template-columns:1fr}.ticket-foot div+div{border-left:none;border-top:1px dashed rgba(197,160,106,.32)}.cer-stage{min-height:540px}}
+
+
+/* V11.3 update: safe top spacing + dresscode theme switcher */
+:root{
+  --rose-rgb:217,132,150;
+  --gold-rgb:197,160,106;
+  --soft-bg:#fff0f4;
+}
+.phone.app-open .statusbar{color:rgba(40,31,28,.86);text-shadow:0 1px 10px rgba(255,255,255,.45)}
+.phone.app-open .dynamic-island{top:10px}
+.app-topbar{
+  min-height:98px!important;
+  padding:56px 16px 12px!important;
+  align-items:center!important;
+}
+.app-brand{min-width:0;max-width:66%;}
+.brand-copy{min-width:0;max-width:190px;line-height:1.05;}
+.brand-copy b{
+  display:block;
+  max-width:190px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  font-size:1rem!important;
+}
+.top-actions{flex-shrink:0;}
+.wedding-app .app-scroll{
+  background:
+    radial-gradient(circle at 0% 8%,rgba(var(--rose-rgb),.34),transparent 30%),
+    radial-gradient(circle at 100% 14%,rgba(var(--gold-rgb),.32),transparent 34%),
+    linear-gradient(180deg,var(--cream),var(--milk) 42%,var(--soft-bg));
+}
+.dress-panel{margin-top:1.6rem;padding:1rem;border-radius:34px;overflow:visible;}
+.dress-hero{display:grid;gap:.75rem;text-align:center;padding:.5rem .15rem 1rem;}
+.dress-hero b{font-family:var(--serif);font-size:1.45rem;line-height:1.05;letter-spacing:-.04em;}
+.dress-hero span{color:var(--muted);font-size:.82rem;line-height:1.6;}
+.tone-grid{display:grid;grid-template-columns:1fr 1fr;gap:.72rem;}
+.tone-btn{
+  border:1px solid rgba(197,160,106,.18);
+  background:rgba(255,255,255,.68);
+  border-radius:25px;
+  padding:.78rem;
+  text-align:left;
+  display:grid;
+  gap:.5rem;
+  box-shadow:0 10px 24px rgba(83,45,33,.08);
+  transition:transform .35s var(--spring),box-shadow .35s var(--ease),border-color .35s var(--ease);
+}
+.tone-btn:active{transform:scale(.97)}
+.tone-btn.active{border-color:rgba(var(--rose-rgb),.62);box-shadow:0 16px 30px rgba(var(--rose-rgb),.18)}
+.tone-preview{height:42px;border-radius:18px;display:flex;overflow:hidden;border:3px solid rgba(255,255,255,.8);box-shadow:0 7px 14px rgba(0,0,0,.08)}
+.tone-preview i{flex:1;display:block}
+.tone-name{font-weight:900;color:var(--ink);font-size:.84rem;}
+.tone-note{font-size:.68rem;color:var(--muted);line-height:1.35;}
+.dress-note{margin-top:.85rem;padding:.86rem;border-radius:22px;background:rgba(255,255,255,.72);border:1px dashed rgba(197,160,106,.28);color:var(--muted);font-size:.8rem;line-height:1.58;text-align:center;}
+@media(max-width:390px){
+  .app-topbar{min-height:102px!important;padding-top:60px!important;padding-left:14px!important;padding-right:14px!important;}
+  .brand-copy{max-width:150px}.brand-copy b{max-width:150px;font-size:.94rem!important}.brand-copy small{font-size:.5rem!important}
+  .top-actions{gap:.32rem}.top-actions button,.top-actions a{width:36px!important;height:36px!important}
+  .tone-grid{grid-template-columns:1fr;}
+}
+
+
+
+/* V11.8 addition: transparent light-pink hearts floating through the whole web */
+.floating-hearts-all{
+  position:absolute;
+  inset:0;
+  z-index:960;
+  pointer-events:none;
+  overflow:hidden;
+  border-radius:inherit;
+}
+.float-heart-all{
+  position:absolute;
+  left:var(--x,50%);
+  bottom:-58px;
+  display:block;
+  line-height:1;
+  font-size:var(--s,22px);
+  color:rgba(246,199,209,var(--o,.38));
+  opacity:0;
+  transform:translate3d(0,0,0) rotate(var(--rot,0deg)) scale(.72);
+  filter:blur(var(--blur,0px)) drop-shadow(0 10px 18px rgba(246,199,209,.24));
+  text-shadow:0 0 18px rgba(255,255,255,.30);
+  mix-blend-mode:screen;
+  will-change:transform,opacity;
+  animation:globalHeartRise var(--dur,10s) linear forwards;
+}
+.float-heart-all.fill{
+  color:rgba(255,226,234,var(--o,.34));
+}
+.float-heart-all.tiny{
+  filter:blur(.25px) drop-shadow(0 8px 14px rgba(246,199,209,.18));
+}
+@keyframes globalHeartRise{
+  0%{
+    opacity:0;
+    transform:translate3d(0,0,0) rotate(var(--rot,0deg)) scale(.62);
+  }
+  9%{opacity:var(--o,.38)}
+  72%{opacity:calc(var(--o,.38) * .92)}
+  100%{
+    opacity:0;
+    transform:translate3d(var(--drift,0px),-110svh,0) rotate(var(--rotEnd,40deg)) scale(var(--endScale,1.22));
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .floating-hearts-all{display:none}
+}
+
+
+
+/* V12 Lite performance layer: keeps the same romantic look but reduces paint/GPU work */
+:root{
+  --perf-soft-shadow:0 10px 24px rgba(83,45,33,.10);
+}
+.phone,.screen,.wedding-app,.app-scroll,.section,.card,.gallery-item,.portrait,.cer-card{
+  contain:layout paint style;
+}
+.section:not(.hero):not(.closing){
+  content-visibility:auto;
+  contain-intrinsic-size:760px;
+}
+.app-scroll{
+  scroll-behavior:auto;
+}
+.card,.portrait,.gallery-item,.ios-widget,.home-dock,.app-dock,.live-bubble{
+  box-shadow:var(--perf-soft-shadow);
+}
+.hero-photo{
+  animation-duration:24s;
+}
+.hero-glow{
+  filter:blur(7px);
+  opacity:.42;
+}
+.hero-shine{
+  animation-duration:9s;
+  opacity:.28;
+}
+.float-heart-all{
+  filter:none!important;
+  mix-blend-mode:normal!important;
+  text-shadow:0 0 8px rgba(255,255,255,.18);
+  will-change:transform,opacity;
+}
+.float-heart-all.tiny{
+  filter:none!important;
+}
+.petal,.heart,.spark{
+  will-change:transform,opacity;
+}
+.gallery-item:hover img{
+  transform:none;
+}
+@media(max-width:480px){
+  .device-glow,.hero-glow.g3{display:none!important}
+  .phone{box-shadow:0 22px 44px rgba(0,0,0,.38),inset 0 0 0 1px rgba(255,255,255,.10)}
+  .phone:before{opacity:.45}
+  .lock-widget,.unlock-pill,.ios-widget,.home-dock,.app-topbar,.app-dock,.card,.plaque,.photo-label,.live-bubble,.closing-actions a,.closing-actions button{
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+  }
+  [data-reveal]{filter:none!important;transition-duration:.58s!important}
+  .phone.app-open .home-screen{filter:none!important}
+  .phone.unlocked .lock-screen{filter:none!important}
+  .hero-photo{animation-duration:32s}
+  .hero-heart{animation-duration:9s!important;opacity:.34}
+  .hero-shine{display:none!important}
+  .record img{animation-duration:14s}
+  .wave i{animation-duration:1.4s}
+  .float-heart-all{text-shadow:none!important}
+}
+@media (prefers-reduced-motion:reduce){
+  .petal-layer,.heart-layer,.confetti-layer,.floating-hearts-all,.hero-fx{display:none!important}
+}
+
+</style>
+</head>
+<body>
+<div class="device-wrap">
+  <div class="device-glow"></div>
+  <main class="phone" id="phone">
+    <div class="phone-buttons"></div>
+    <div class="screen" id="screen">
+      <div class="floating-hearts-all" id="floatingHeartsAllWeb" aria-hidden="true"></div>
+      <div class="statusbar" id="statusbar">
+        <span id="statusTime">09:41</span>
+        <span class="status-icons"><span class="signal"><i></i><i></i><i></i><i></i></span> 5G <span class="battery"></span></span>
+      </div>
+      <div class="dynamic-island" id="island"><span class="island-mini" id="islandText">💗 LoveOS đang mở thiệp</span></div>
+
+      <section class="lock-screen" id="lockScreen">
+        <div class="wallpaper"></div>
+        <div class="lock-content">
+          <div class="lock-date" id="lockDate">Chủ nhật, 28 tháng 6</div>
+          <div class="lock-time" id="lockTime">09:41</div>
+          <div class="lock-widget">
+            <small>Wedding Invitation</small>
+            <h1>Hải <span>& Linh</span></h1>
+            <p>Một lời mời được mở khóa như iPhone — nhẹ, sang và có chút bất ngờ dành riêng cho bạn.</p>
+          </div>
+          <div class="lockscreen-spacer"></div>
+          <button class="unlock-pill" id="unlockBtn" aria-label="Mở khóa thiệp cưới"><span>Vuốt / chạm để mở lời mời</span></button>
+          <div class="lock-hint">Tự mở khóa sau vài giây ✦ hoặc chạm để vào ngay</div>
+          <div class="lock-actions"><div class="lock-bubble">🔦</div><div class="lock-bubble">📷</div></div>
+        </div>
+      </section>
+
+      <section class="home-screen" id="homeScreen">
+        <div class="home-blur"></div>
+        <div class="home-content">
+          <div class="widget-grid">
+            <div class="ios-widget widget-date"><span>28.06</span><b>2026</b><span>Save The Date</span></div>
+            <div class="ios-widget widget-count"><small>Countdown</small><strong id="homeDays">--</strong><em>ngày nữa</em></div>
+          </div>
+          <div class="app-grid">
+            <button class="app-icon" data-open-app><span class="icon-box love">HL</span><span>Thiệp cưới</span></button>
+            <button class="app-icon" data-target="dateRoom"><span class="icon-box note">📅</span><span>Ngày cưới</span></button>
+            <button class="app-icon" data-target="ceremonyRoom"><span class="icon-box map">📍</span><span>Địa điểm</span></button>
+            <button class="app-icon" data-target="galleryRoom"><span class="icon-box photo">🖼️</span><span>Ảnh cưới</span></button>
+            <button class="app-icon" data-target="dresscodeRoom"><span class="icon-box note">🎨</span><span>Dresscode</span></button>
+            <button class="app-icon" data-target="rsvpRoom"><span class="icon-box">💌</span><span>RSVP</span></button>
+            <button class="app-icon" data-target="giftRoom"><span class="icon-box note">🎁</span><span>Mừng cưới</span></button>
+            <button class="app-icon" id="homeMusic"><span class="icon-box music">♪</span><span>Nhạc</span></button>
+            <button class="app-icon" id="homeHeart"><span class="icon-box">♡</span><span>Bắn tim</span></button>
+          </div>
+          <div class="open-toast">Tự mở ứng dụng “Thiệp cưới”...</div>
+          <div class="home-dock">
+            <button data-open-app><span class="icon-box love">HL</span></button>
+            <button data-target="storyRoom"><span class="icon-box note">🗺️</span></button>
+            <button data-target="rsvpRoom"><span class="icon-box">💌</span></button>
+            <button id="dockHeartHome"><span class="icon-box">💗</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="wedding-app" id="weddingApp">
+        <div class="petal-layer" id="petalLayer"></div>
+        <div class="heart-layer" id="heartLayer"></div>
+        <div class="confetti-layer" id="confettiLayer"></div>
+
+        <div class="app-scroll" id="appScroll">
+          <div class="app-topbar">
+            <div class="app-brand">
+              <div class="mini-logo">HL</div>
+              <div class="brand-copy"><small>LoveOS V12 Lite</small><b>Hải & Linh</b></div>
+            </div>
+            <div class="top-actions">
+              <button id="topMusic" aria-label="Bật/tắt nhạc">♪</button>
+              <button id="topHeart" aria-label="Bắn tim">♡</button>
+              <a href="#hero" aria-label="Về đầu">⌂</a>
+            </div>
+          </div>
+
+          <section class="section hero" id="hero">
+            <img class="hero-photo" src="1.webp" alt="Đức Hải và Ngọc Linh" decoding="async" fetchpriority="high" />
+            <div class="hero-fx" aria-hidden="true">
+              <span class="hero-glow g1"></span>
+              <span class="hero-glow g2"></span>
+              <span class="hero-glow g3"></span>
+              <span class="hero-heart h1">♡</span>
+              <span class="hero-heart h2">♡</span>
+              <span class="hero-heart h3">♡</span>
+              <span class="hero-heart h4">♡</span>
+              <span class="hero-heart h5">♡</span>
+              <span class="hero-shine"></span>
+            </div>
+            <div class="hero-composition">
+              <div class="hero-topline" data-reveal>
+
+              </div>
+              <div class="hero-copy" data-reveal data-delay="1">
+                <span class="hero-eyebrow">The beginning of forever</span>
+                <h1 class="hero-title-free"><span class="name-line">Đức Hải</span><i>&</i><span class="name-line">Ngọc Linh</span></h1>
+                <p>Một lời mời nhỏ, giản dị và đủ dịu dàng để bạn bước vào ngày vui của chúng mình.</p>
+                <div class="hero-date-line"><span>Chủ nhật</span><span>28 · 06 · 2026</span><span class="hero-guest" id="guestChip">Quý Khách</span></div>
+              </div>
+            </div>
+            <div class="hero-pulse"><i></i><span>Chạm để gửi tim</span></div>
+            <div class="scroll-cue">⌄</div>
+          
+          </section>
+
+          <section class="section" id="ticketRoom">
+            <span class="kicker" data-reveal>App 01 · Entry Pass</span>
+            <span class="title" data-reveal data-delay="1">Invitation Pass</span>
+            <span class="script" data-reveal data-delay="2">Lời mời dành riêng cho bạn</span>
+            <p class="sub" data-reveal data-delay="3">Bật nhạc nền, nhận vé mời và bắt đầu lướt qua từng màn hình của ngày cưới.</p>
+
+            <div class="card audio-card" data-reveal="zoom">
+              <div class="card-pad audio-row">
+                <div class="record" id="record"><img id="cover" src="3.webp" alt="Music cover" loading="lazy" decoding="async" /></div>
+                <div>
+                  <div class="song-small">LoveOS Audio</div>
+                  <div class="song-title" id="songTitle">Unlock Waltz</div>
+                  <div class="song-sub" id="songSub">Track 01 · Lock Screen</div>
+                  <div class="wave" id="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="audio-actions"><button id="prevSong">‹</button><button id="playBtn">▶ Play</button><button id="nextSong">›</button></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card ticket" data-reveal data-delay="2">
+              <div class="ticket-top"><div>INV-280626 · LOVEOS PASS</div><div class="stamp">ADMIT ONE</div></div>
+              <div class="card-pad">
+                <div class="ticket-label">Trân trọng kính mời</div>
+                <div class="guest-name" id="guestName">Quý Khách</div>
+                <p>Đến tham dự ngày thành hôn của Đức Hải & Ngọc Linh. Tấm vé này là lời mời cá nhân dành riêng cho bạn trong ngày 28.06.2026.</p>
+              </div>
+              <div class="ticket-foot"><div><b>28.06.2026</b><span>Wedding Date</span></div><div><b>Nhà Trai / Nhà Gái</b><span>Two Rooms</span></div></div>
+            </div>
+          </section>
+
+          <section class="section" id="dateRoom">
+            <span class="kicker" data-reveal>App 02 · Save The Date</span>
+            <span class="title" data-reveal data-delay="1">The Date</span>
+            <span class="script" data-reveal data-delay="2">Ngày mình thành đôi</span>
+            <p class="sub" data-reveal data-delay="3">Một ngày Chủ nhật, 28 tháng 6 năm 2026, được ghim ngay giữa màn hình LoveOS.</p>
+            <div class="card calendar" data-reveal="zoom" data-delay="4">
+              <div class="month-head"><strong>06</strong><span>June 2026</span></div>
+              <div class="cal-grid">
+                <div class="dow">T2</div><div class="dow">T3</div><div class="dow">T4</div><div class="dow">T5</div><div class="dow">T6</div><div class="dow">T7</div><div class="dow">CN</div>
+                <div>1</div><div>2</div><div>3</div><div>4</div><div>5</div><div>6</div><div>7</div>
+                <div>8</div><div>9</div><div>10</div><div>11</div><div>12</div><div>13</div><div>14</div>
+                <div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div><div>21</div>
+                <div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div><div class="mark">28</div>
+                <div>29</div><div>30</div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+              </div>
+              <div class="countdown"><div class="cd"><b id="cdd">--</b><span>Ngày</span></div><div class="cd"><b id="cdh">--</b><span>Giờ</span></div><div class="cd"><b id="cdm">--</b><span>Phút</span></div><div class="cd"><b id="cds">--</b><span>Giây</span></div></div>
+            </div>
+          </section>
+
+          <section class="section" id="coupleRoom">
+            <span class="kicker" data-reveal>App 03 · Couple Gallery</span>
+            <span class="title" data-reveal data-delay="1">Two Portraits</span>
+            <span class="script" data-reveal data-delay="2">Cô dâu & Chú rể</span>
+            <p class="sub" data-reveal data-delay="3">Hai màn hình chân dung, hai câu chuyện, và một lời hẹn cùng nhau đi tiếp.</p>
+            <div class="couple-wall">
+              <div class="portrait" data-reveal="left"><img src="2.webp" alt="Ngọc Linh" loading="lazy" decoding="async" /><div class="plaque"><small>Bride</small><h3>Ngọc Linh</h3></div></div>
+              <div class="portrait" data-reveal="right" data-delay="1"><img src="4.webp" alt="Đức Hải" loading="lazy" decoding="async" /><div class="plaque"><small>Groom</small><h3>Đức Hải</h3></div></div>
+            </div>
+            <div class="card note-card" data-reveal data-delay="2">Trong LoveOS này, điều đẹp nhất không nằm ở hiệu ứng — mà là khoảnh khắc chúng mình được đứng cạnh nhau trong ngày quan trọng.</div>
+          </section>
+
+          <section class="section" id="ceremonyRoom">
+            <span class="kicker" data-reveal>App 04 · Ceremony Rooms</span>
+            <span class="title" data-reveal data-delay="1">Two Families</span>
+            <span class="script" data-reveal data-delay="2">Lễ cưới hai nhà</span>
+            <p class="sub" data-reveal data-delay="3">Chọn đúng tab Nhà Trai hoặc Nhà Gái để xem lịch tiệc, địa điểm và thêm vào lịch cá nhân.</p>
+            <div class="segment" data-reveal data-delay="4"><button class="active" data-tab="groom">Nhà Trai</button><button data-tab="bride">Nhà Gái</button></div>
+            <div class="cer-stage" data-reveal>
+              <article class="cer-card active" id="groom">
+                <div class="cer-photo"><img src="8.webp" alt="Nhà Trai" loading="lazy" decoding="async" /></div>
+                <div class="card cer-info">
+                  <div class="cer-label">Groom's Ceremony</div><h2 class="cer-title">Tiệc cưới Nhà Trai</h2>
+                  <div class="cer-row"><div class="cer-ico">🗓</div><div><b>Chủ nhật, 28/06/2026</b><span>Thời gian: 10:30 sáng</span></div></div>
+                  <div class="cer-row"><div class="cer-ico">📍</div><div><b>Tư gia / Trung tâm tiệc cưới Nhà Trai</b><span>Thay bằng địa chỉ thật của gia đình nhà trai.</span></div></div>
+                  <div class="cer-actions"><a href="https://maps.google.com" target="_blank" rel="noopener">Chỉ đường</a><a href="#" id="calGroom">Thêm lịch</a></div>
+                </div>
+              </article>
+              <article class="cer-card" id="bride">
+                <div class="cer-photo"><img src="9.webp" alt="Nhà Gái" loading="lazy" decoding="async" /></div>
+                <div class="card cer-info">
+                  <div class="cer-label">Bride's Ceremony</div><h2 class="cer-title">Tiệc cưới Nhà Gái</h2>
+                  <div class="cer-row"><div class="cer-ico">🗓</div><div><b>Chủ nhật, 28/06/2026</b><span>Thời gian: 17:30 chiều</span></div></div>
+                  <div class="cer-row"><div class="cer-ico">📍</div><div><b>Tư gia / Trung tâm tiệc cưới Nhà Gái</b><span>Thay bằng địa chỉ thật của gia đình nhà gái.</span></div></div>
+                  <div class="cer-actions"><a href="https://maps.google.com" target="_blank" rel="noopener">Chỉ đường</a><a href="#" id="calBride">Thêm lịch</a></div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" id="storyRoom">
+            <span class="kicker" data-reveal>App 05 · Memory Map</span>
+            <span class="title" data-reveal data-delay="1">Journey Map</span>
+            <span class="script" data-reveal data-delay="2">Lịch sử yêu</span>
+            <p class="sub" data-reveal data-delay="3">Mỗi lần cuộn là một mốc nhỏ, như đang xem lại bản đồ kỷ niệm trên điện thoại.</p>
+            <div class="story" id="storyWrap">
+              <div class="story-line"><span id="storyProgress"></span></div>
+              <div class="story-item" data-reveal><div class="story-dot">01</div><div class="card story-card"><div class="story-year">First Pin</div><h3 class="story-title">Một lần gặp gỡ</h3><p class="story-desc">Có những cuộc gặp rất nhẹ, nhưng lại ở lại thật lâu trong ký ức.</p><img src="5.webp" alt="Kỷ niệm 1" loading="lazy" decoding="async" /></div></div>
+              <div class="story-item" data-reveal><div class="story-dot">02</div><div class="card story-card"><div class="story-year">Second Pin</div><h3 class="story-title">Những ngày dịu dàng</h3><p class="story-desc">Tình yêu lớn lên từ những điều nhỏ: một tin nhắn, một buổi hẹn, một ánh nhìn.</p><img src="6.webp" alt="Kỷ niệm 2" loading="lazy" decoding="async" /></div></div>
+              <div class="story-item" data-reveal><div class="story-dot">03</div><div class="card story-card"><div class="story-year">Third Pin</div><h3 class="story-title">Lời hẹn của cả đời</h3><p class="story-desc">Khi câu trả lời là “Có”, mọi ngày phía trước bỗng trở thành một hành trình chung.</p><img src="7.webp" alt="Kỷ niệm 3" loading="lazy" decoding="async" /></div></div>
+              <div class="story-item" data-reveal><div class="story-dot">♡</div><div class="card story-card"><div class="story-year">28.06.2026</div><h3 class="story-title">Ngày tình yêu nở hoa</h3><p class="story-desc">Và chúng mình mong được gặp bạn trong căn phòng đẹp nhất của ngày ấy.</p></div></div>
+            </div>
+          </section>
+
+          <section class="section" id="galleryRoom">
+            <span class="kicker" data-reveal>App 06 · Photo Widgets</span>
+            <span class="title" data-reveal data-delay="1">Selected Moments</span>
+            <span class="script" data-reveal data-delay="2">Những khoảnh khắc được chọn</span>
+            <p class="sub" data-reveal data-delay="3">Bộ ảnh được đặt như các widget ảnh trong LoveOS — đủ nhẹ để xem nhanh, đủ đẹp để dừng lại lâu hơn.</p>
+            <div class="gallery">
+              <div class="gallery-item big" data-reveal="zoom"><img src="10.webp" alt="Khoảnh khắc 1" loading="lazy" decoding="async" /><div class="photo-label">Widget A · The day begins softly.</div></div>
+              <div class="gallery-item tall" data-reveal="left"><img src="11.webp" alt="Khoảnh khắc 2" loading="lazy" decoding="async" /></div>
+              <div class="gallery-item quote" data-reveal="right"><b>Love as<br />an app.</b><p>Một ứng dụng nhỏ lưu lại điều lớn nhất: được yêu và được chúc phúc.</p></div>
+              <div class="gallery-item small" data-reveal="left"><img src="12.webp" alt="Khoảnh khắc 3" loading="lazy" decoding="async" /></div>
+              <div class="gallery-item small" data-reveal="right"><img src="13.webp" alt="Khoảnh khắc 4" loading="lazy" decoding="async" /></div>
+            </div>
+          </section>
+
+
+          <section class="section" id="dresscodeRoom">
+            <span class="kicker" data-reveal>App 07 · Dresscode Tone</span>
+            <span class="title" data-reveal data-delay="1">Dresscode</span>
+            <span class="script" data-reveal data-delay="2">Đổi tone màu thiệp</span>
+            <p class="sub" data-reveal data-delay="3">Khách mời có thể chạm vào tone màu bên dưới để đổi cảm giác của toàn bộ LoveOS: từ ngọt ngào, champagne đến xanh sage nhẹ nhàng.</p>
+            <div class="card dress-panel" data-reveal data-delay="4">
+              <div class="dress-hero"><b>Gợi ý trang phục</b><span>Ưu tiên trang phục lịch sự, nhẹ nhàng. Các tone phù hợp: ivory, champagne, hồng phấn, xanh sage hoặc xanh trời nhạt.</span></div>
+              <div class="tone-grid">
+                <button class="tone-btn active" data-theme="rose" aria-label="Tone Blush Rose"><span class="tone-preview"><i style="background:#fff9f4"></i><i style="background:#ffe9ee"></i><i style="background:#f6c7d1"></i><i style="background:#d98496"></i></span><span class="tone-name">Blush Rose</span><span class="tone-note">Hồng phấn ngọt, hợp không khí cưới.</span></button>
+                <button class="tone-btn" data-theme="champagne" aria-label="Tone Champagne Gold"><span class="tone-preview"><i style="background:#fffaf0"></i><i style="background:#f8e8bd"></i><i style="background:#d6ad67"></i><i style="background:#b88952"></i></span><span class="tone-name">Champagne Gold</span><span class="tone-note">Sang, ấm, hợp tiệc tối và concept luxury.</span></button>
+                <button class="tone-btn" data-theme="sage" aria-label="Tone Sage Garden"><span class="tone-preview"><i style="background:#fbfff9"></i><i style="background:#dcefdc"></i><i style="background:#9bc7a4"></i><i style="background:#6e9b78"></i></span><span class="tone-name">Sage Garden</span><span class="tone-note">Xanh nhẹ, trong trẻo, hợp dresscode pastel.</span></button>
+                <button class="tone-btn" data-theme="sky" aria-label="Tone Soft Sky"><span class="tone-preview"><i style="background:#f8fbff"></i><i style="background:#dcecff"></i><i style="background:#9bbfe9"></i><i style="background:#6f92c8"></i></span><span class="tone-name">Soft Sky</span><span class="tone-note">Xanh trời nhạt, tối giản và dịu mắt.</span></button>
+              </div>
+              <div class="dress-note">Tone màu sẽ được lưu lại trên máy của khách mời để lần sau mở thiệp vẫn giữ đúng phong cách đã chọn.</div>
+            </div>
+          </section>
+
+          <section class="section" id="guideRoom">
+            <span class="kicker" data-reveal>App 08 · Guest Guide</span>
+            <span class="title" data-reveal data-delay="1">Visitor Notes</span>
+            <span class="script" data-reveal data-delay="2">Gợi ý cho khách mời</span>
+            <p class="sub" data-reveal data-delay="3">Một vài ghi chú nhỏ để bạn chuẩn bị dễ dàng và hòa vào tổng thể ngày cưới.</p>
+            <div class="palette" data-reveal data-delay="4"><div class="sw" style="background:#fff9f4"></div><div class="sw" style="background:#ffe9ee"></div><div class="sw" style="background:#f6c7d1"></div><div class="sw" style="background:#c5a06a"></div></div>
+            <div class="guide-grid">
+              <div class="card guide-card" data-reveal><i>🎫</i><b>Vé mời</b><span>Tên khách có thể đổi bằng đường dẫn có tham số <b>?guest=Tên</b>.</span></div>
+              <div class="card guide-card" data-reveal data-delay="1"><i>📍</i><b>Địa điểm</b><span>Kiểm tra đúng tab Nhà Trai hoặc Nhà Gái trước khi đi.</span></div>
+              <div class="card guide-card" data-reveal data-delay="2"><i>🎀</i><b>Trang phục</b><span>Chọn tone ở mục Dresscode: ivory, champagne, hồng phấn, sage hoặc sky pastel.</span></div>
+              <div class="card guide-card" data-reveal data-delay="3"><i>💌</i><b>Lời chúc</b><span>Bạn có thể gửi lời chúc nhanh ở thanh cuối màn hình.</span></div>
+            </div>
+          </section>
+
+          <section class="section" id="rsvpRoom">
+            <span class="kicker" data-reveal>App 09 · RSVP Desk</span>
+            <span class="title" data-reveal data-delay="1">RSVP</span>
+            <span class="script" data-reveal data-delay="2">Xác nhận tham dự</span>
+            <p class="sub" data-reveal data-delay="3">Trước khi thoát ứng dụng, hãy để lại cho chúng mình một lời nhắn nhỏ.</p>
+            <div class="card rsvp-card" data-reveal data-delay="4">
+              <div class="field"><label>Họ và tên</label><input id="rname" placeholder="Nhập tên của bạn" /></div>
+              <div class="field"><label>Bạn sẽ tham dự?</label><div class="choice"><label><input type="radio" name="att" value="yes" checked /> Có mặt</label><label><input type="radio" name="att" value="no" /> Gửi lời chúc</label></div></div>
+              <div class="field"><label>Lời chúc</label><textarea id="rwish" placeholder="Gửi lời chúc đến cặp đôi..."></textarea></div>
+              <button class="submit" id="sendRsvp">Gửi xác nhận 💌</button>
+              <p class="rmsg" id="rmsg"></p>
+              <div class="wish-list" id="wishList"><div class="wish"><b>Minh Anh</b><p>Concept LoveOS x iPhone đẹp quá. Chúc hai bạn mãi hạnh phúc!</p></div><div class="wish"><b>Hoàng Nam</b><p>Hẹn gặp hai bạn trong ngày vui nhé!</p></div></div>
+            </div>
+          </section>
+
+          <section class="section" id="giftRoom">
+            <span class="kicker" data-reveal>App 10 · Gift Wallet</span>
+            <span class="title" data-reveal data-delay="1">Wedding Gift</span>
+            <span class="script" data-reveal data-delay="2">Phong bì yêu thương</span>
+            <p class="sub" data-reveal data-delay="3">Một góc nhỏ dành cho những tình cảm gửi đến cô dâu chú rể.</p>
+            <div class="envelope" id="envelope" data-reveal data-delay="4"><div class="env-back"></div><div class="gift-card"><b>Đức Hải & Ngọc Linh</b><div class="qr"></div><p>STK: 0000 0000 0000<br />Ngân hàng: Tên ngân hàng</p></div><div class="env-front"></div><div class="env-flap"></div></div>
+            <button class="open-gift" id="openGift">Mở phong bì ✦</button>
+          </section>
+
+          <section class="section closing" id="closing">
+            <img class="closing-bg" src="18.webp" alt="Thank you" loading="lazy" decoding="async" />
+            <div class="closing-content"><span class="kicker" data-reveal>Final Screen · See you on 28.06.2026</span><div class="thanks" data-reveal data-delay="1">Thank You</div><div class="closing-names" data-reveal data-delay="2">Đức Hải & Ngọc Linh</div><div class="closing-actions" data-reveal data-delay="3"><a href="#ticketRoom">Xem lại vé mời</a><a href="#ceremonyRoom">Xem lịch cưới</a><button id="moreHeart">Bắn tim</button></div></div>
+          </section>
+        </div>
+
+        <div class="live" id="live"></div>
+        <div class="app-dock">
+          <input class="quick-wish" id="quickWish" placeholder="Gửi lời chúc nhanh..." />
+          <button class="dock-btn" id="sendQuick" aria-label="Gửi lời chúc">➤</button>
+          <button class="dock-btn secondary" id="heartBtn" aria-label="Bắn tim">♡</button>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+
+<audio id="audio" loop preload="metadata"><source src="nhac.mp3" type="audio/mpeg" /></audio>
+
+<script>
+'use strict';
+const API_URL='https://script.google.com/macros/s/YOUR_ID/exec';
+const WEDDING_DATE=new Date('2026-06-28T10:30:00+07:00');
+const phone=document.getElementById('phone');
+const screen=document.getElementById('screen');
+const appScroll=document.getElementById('appScroll');
+const island=document.getElementById('island');
+const islandText=document.getElementById('islandText');
+const audio=document.getElementById('audio');
+
+const PERF={
+  reduceMotion:window.matchMedia('(prefers-reduced-motion: reduce)').matches,
+  mobile:window.matchMedia('(max-width: 480px)').matches,
+  lowPower:false,
+  maxFloatingHearts:26,
+  initialHearts:14,
+  floatingInterval:950,
+  petalLimit:14,
+  petalInterval:1350,
+  sparkCap:24,
+  heartCap:10
+};
+PERF.lowPower=PERF.mobile || (navigator.hardwareConcurrency && navigator.hardwareConcurrency<=4) || (navigator.deviceMemory && navigator.deviceMemory<=4) || (navigator.connection && navigator.connection.saveData);
+if(PERF.lowPower){
+  PERF.maxFloatingHearts=16;
+  PERF.initialHearts=8;
+  PERF.floatingInterval=1450;
+  PERF.petalLimit=8;
+  PERF.petalInterval=1900;
+  PERF.sparkCap=14;
+  PERF.heartCap=6;
+}
+
+const params=new URLSearchParams(location.search);
+const guest=params.get('guest')?decodeURIComponent(params.get('guest').replace(/\+/g,' ')):'Quý Khách';
+let playing=false;
+let opened=false;
+let liveTimer=null;
+let petalTimer=null;
+
+const songs=[
+  {t:'Unlock Waltz',s:'Track 01 · Lock Screen',c:'3.webp'},
+  {t:'Portrait of Us',s:'Track 02 · Couple Gallery',c:'2.webp'},
+  {t:'Final Exhibit',s:'Track 03 · Thank You',c:'4.webp'}
+];
+let songIndex=0;
+
+function $(id){return document.getElementById(id)}
+function setText(id,text){const el=$(id);if(el)el.textContent=text}
+
+function updateClock(){
+  const now=new Date();
+  const time=now.toLocaleTimeString('vi-VN',{hour:'2-digit',minute:'2-digit'});
+  setText('statusTime',time);setText('lockTime',time);
+  setText('lockDate',WEDDING_DATE.toLocaleDateString('vi-VN',{weekday:'long',day:'numeric',month:'long'}));
+}
+updateClock();setInterval(updateClock,15000);
+
+function setGuest(){
+  setText('guestName',guest);
+  setText('guestChip',guest);
+  const rname=$('rname');
+  if(rname)rname.value=guest==='Quý Khách'?'':guest;
+}
+setGuest();
+
+
+const THEMES={
+  rose:{rose:'#d98496',rose2:'#f6c7d1',blush:'#ffe9ee',gold:'#c5a06a',gold2:'#efd9a3',cream:'#fff9f4',milk:'#fffefd',soft:'#fff0f4',roseRgb:'217,132,150',goldRgb:'197,160,106'},
+  champagne:{rose:'#c69252',rose2:'#f1d19b',blush:'#fff1d8',gold:'#b88952',gold2:'#f4dfad',cream:'#fffaf0',milk:'#fffefd',soft:'#fff5df',roseRgb:'198,146,82',goldRgb:'184,137,82'},
+  sage:{rose:'#6e9b78',rose2:'#b7d7ba',blush:'#e9f6ea',gold:'#9c8b58',gold2:'#e7ddb8',cream:'#fbfff9',milk:'#ffffff',soft:'#edf8ef',roseRgb:'110,155,120',goldRgb:'156,139,88'},
+  sky:{rose:'#6f92c8',rose2:'#b7d4f3',blush:'#e9f4ff',gold:'#9c8b58',gold2:'#e7ddb8',cream:'#f8fbff',milk:'#ffffff',soft:'#edf6ff',roseRgb:'111,146,200',goldRgb:'156,139,88'}
+};
+function applyTheme(name='rose',save=true){
+  const theme=THEMES[name]||THEMES.rose;
+  const root=document.documentElement;
+  root.style.setProperty('--rose',theme.rose);
+  root.style.setProperty('--rose2',theme.rose2);
+  root.style.setProperty('--blush',theme.blush);
+  root.style.setProperty('--gold',theme.gold);
+  root.style.setProperty('--gold2',theme.gold2);
+  root.style.setProperty('--cream',theme.cream);
+  root.style.setProperty('--milk',theme.milk);
+  root.style.setProperty('--screen',theme.cream);
+  root.style.setProperty('--soft-bg',theme.soft);
+  root.style.setProperty('--rose-rgb',theme.roseRgb);
+  root.style.setProperty('--gold-rgb',theme.goldRgb);
+  document.querySelectorAll('[data-theme]').forEach(btn=>btn.classList.toggle('active',btn.dataset.theme===name));
+  if(save) localStorage.setItem('loveos-theme',name);
+  dynamic('🎨 Tone '+(document.querySelector('[data-theme="'+name+'"] .tone-name')?.textContent||name),'active',1150);
+}
+function initTheme(){
+  const saved=localStorage.getItem('loveos-theme')||'rose';
+  applyTheme(saved,false);
+  document.querySelectorAll('[data-theme]').forEach(btn=>btn.addEventListener('click',()=>applyTheme(btn.dataset.theme,true)));
+}
+initTheme();
+
+
+function dynamic(message,type='active',duration=1450){
+  island.classList.remove('active','music');
+  island.classList.add(type);
+  islandText.textContent=message;
+  clearTimeout(dynamic._t);
+  if(duration){dynamic._t=setTimeout(()=>island.classList.remove(type),duration)}
+}
+
+function sparkBurst(x,y,count=34){
+  if(PERF.reduceMotion)return;
+  const layer=$('confettiLayer') || screen;
+  const safeCount=Math.min(count,PERF.sparkCap);
+  for(let i=0;i<safeCount;i++){
+    const s=document.createElement('i');
+    s.className='spark';
+    s.style.left=x+'px';s.style.top=y+'px';
+    const a=Math.random()*Math.PI*2;
+    const d=38+Math.random()*(PERF.lowPower?86:135);
+    s.style.setProperty('--x',Math.cos(a)*d+'px');
+    s.style.setProperty('--y',Math.sin(a)*d+'px');
+    s.style.background=['#f6c7d1','#ffe9ee','#fffefd','#efd9a3','#d98496'][Math.floor(Math.random()*5)];
+    layer.appendChild(s);setTimeout(()=>s.remove(),950);
+  }
+}
+
+function unlock(){
+  if(opened)return;
+  opened=true;
+  phone.classList.add('unlocked');
+  dynamic('🔓 Đã mở khóa lời mời','active',1700);
+  sparkBurst(screen.clientWidth/2,screen.clientHeight*.46,42);
+  startPetals();
+  setTimeout(()=>dynamic('💗 Mở app Thiệp cưới','active',1300),700);
+  setTimeout(openWeddingApp,1500);
+}
+
+function openWeddingApp(target){
+  phone.classList.add('app-open');
+  dynamic('💗 Hải & Linh · LoveOS','active',1600);
+  startPetals();startLive();
+  audio.play().then(()=>{playing=true;setMusicState();}).catch(()=>{});
+  if(target){setTimeout(()=>scrollToSection(target),520)}
+}
+
+setTimeout(unlock,1900);
+$('unlockBtn').addEventListener('click',unlock);
+$('lockScreen').addEventListener('pointerup',unlock,{once:true});
+document.querySelectorAll('[data-open-app]').forEach(btn=>btn.addEventListener('click',()=>openWeddingApp()));
+
+function scrollToSection(id){
+  openWeddingApp();
+  const el=$(id);
+  if(!el)return;
+  setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),120);
+}
+document.querySelectorAll('[data-target]').forEach(btn=>{
+  btn.addEventListener('click',()=>scrollToSection(btn.dataset.target));
+});
+
+function renderSong(){
+  const current=songs[songIndex];
+  setText('songTitle',current.t);setText('songSub',current.s);
+  const cover=$('cover');if(cover)cover.src=current.c;
+}
+function setMusicState(){
+  setText('playBtn',playing?'⏸ Pause':'▶ Play');
+  const record=$('record'),wave=$('wave');
+  if(record)record.classList.toggle('playing',playing);
+  if(wave)wave.classList.toggle('playing',playing);
+  $('topMusic').textContent=playing?'⏸':'♪';
+  island.classList.toggle('music',playing);
+  if(playing) islandText.textContent='♪ '+songs[songIndex].t;
+}
+function toggleMusic(){
+  if(playing){audio.pause();playing=false;setMusicState();dynamic('Nhạc đã tạm dừng','active',1000)}
+  else{audio.play().then(()=>{playing=true;setMusicState();dynamic('♪ '+songs[songIndex].t,'music',1600)}).catch(()=>dynamic('Chạm lại để bật nhạc','active',1300));}
+}
+$('playBtn').addEventListener('click',toggleMusic);
+$('topMusic').addEventListener('click',toggleMusic);
+$('homeMusic').addEventListener('click',toggleMusic);
+$('prevSong').addEventListener('click',()=>{songIndex=(songIndex+songs.length-1)%songs.length;renderSong();audio.currentTime=0;if(playing)dynamic('♪ '+songs[songIndex].t,'music',1500)});
+$('nextSong').addEventListener('click',()=>{songIndex=(songIndex+1)%songs.length;renderSong();audio.currentTime=0;if(playing)dynamic('♪ '+songs[songIndex].t,'music',1500)});
+renderSong();
+
+const revealObserver=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('show');revealObserver.unobserve(entry.target)}
+  });
+},{root:appScroll,threshold:.12});
+document.querySelectorAll('[data-reveal]').forEach(el=>revealObserver.observe(el));
+
+function calendarUrl(title,start,end,details){
+  const fmt=d=>d.toISOString().replace(/[-:]/g,'').split('.')[0]+'Z';
+  return 'https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(title)+'&dates='+fmt(start)+'/'+fmt(end)+'&details='+encodeURIComponent(details);
+}
+$('calGroom').href=calendarUrl('Tiệc cưới Nhà Trai - Đức Hải & Ngọc Linh',new Date('2026-06-28T10:30:00+07:00'),new Date('2026-06-28T13:00:00+07:00'),'Tiệc cưới Nhà Trai');
+$('calBride').href=calendarUrl('Tiệc cưới Nhà Gái - Đức Hải & Ngọc Linh',new Date('2026-06-28T17:30:00+07:00'),new Date('2026-06-28T20:00:00+07:00'),'Tiệc cưới Nhà Gái');
+
+function updateCountdown(){
+  const diff=Math.max(0,WEDDING_DATE.getTime()-Date.now());
+  const days=Math.floor(diff/86400000);
+  const hours=Math.floor(diff%86400000/3600000);
+  const mins=Math.floor(diff%3600000/60000);
+  const secs=Math.floor(diff%60000/1000);
+  setText('cdd',String(days).padStart(2,'0'));
+  setText('cdh',String(hours).padStart(2,'0'));
+  setText('cdm',String(mins).padStart(2,'0'));
+  setText('cds',String(secs).padStart(2,'0'));
+  setText('homeDays',String(days));
+}
+updateCountdown();setInterval(updateCountdown,1000);
+
+function updateStoryProgress(){
+  const wrap=$('storyWrap'),prog=$('storyProgress');
+  if(!wrap||!prog)return;
+  const r=wrap.getBoundingClientRect();
+  const sr=appScroll.getBoundingClientRect();
+  let p=(sr.height*.62-(r.top-sr.top))/r.height;
+  p=Math.max(0,Math.min(1,p));
+  prog.style.setProperty('--progress',(p*100)+'%');
+}
+let appScrollTicking=false;
+function handleAppScroll(){
+  if(appScrollTicking)return;
+  appScrollTicking=true;
+  requestAnimationFrame(()=>{
+    updateStoryProgress();
+    updateIslandBySection();
+    appScrollTicking=false;
+  });
+}
+appScroll.addEventListener('scroll',handleAppScroll,{passive:true});
+updateStoryProgress();
+
+function updateIslandBySection(){
+  if(playing || !phone.classList.contains('app-open'))return;
+  const sections=[['ticketRoom','🎫 Vé mời'],['dateRoom','📅 Save the Date'],['coupleRoom','💍 Cô dâu & Chú rể'],['ceremonyRoom','📍 Lễ cưới'],['storyRoom','🗺️ Journey'],['galleryRoom','🖼️ Moments'],['dresscodeRoom','🎨 Dresscode'],['guideRoom','📝 Gợi ý'],['rsvpRoom','💌 RSVP'],['giftRoom','🎁 Gift Wallet']];
+  const mid=appScroll.getBoundingClientRect().top+120;
+  let current='💗 Hải & Linh';
+  for(const [id,label] of sections){
+    const el=$(id);if(!el)continue;
+    const r=el.getBoundingClientRect();
+    if(r.top<=mid && r.bottom>=mid){current=label;break}
+  }
+  islandText.textContent=current;
+}
+
+function switchTab(tab){
+  document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===tab));
+  document.querySelectorAll('.cer-card').forEach(c=>c.classList.toggle('active',c.id===tab));
+  dynamic(tab==='groom'?'Đang xem Nhà Trai':'Đang xem Nhà Gái','active',1200);
+}
+document.querySelectorAll('[data-tab]').forEach(btn=>btn.addEventListener('click',()=>switchTab(btn.dataset.tab)));
+
+function addWish(name,text){
+  const list=$('wishList');
+  const wish=document.createElement('div');
+  wish.className='wish';
+  wish.innerHTML='<b></b><p></p>';
+  wish.querySelector('b').textContent=name||'Khách mời';
+  wish.querySelector('p').textContent=text||'Chúc hai bạn trăm năm hạnh phúc!';
+  list.prepend(wish);
+}
+$('sendRsvp').addEventListener('click',async()=>{
+  const name=$('rname').value.trim()||'Khách mời';
+  const wish=$('rwish').value.trim()||'Chúc hai bạn trăm năm hạnh phúc!';
+  const att=document.querySelector('input[name="att"]:checked').value;
+  addWish(name,wish);popHeart(screen.clientWidth/2,screen.clientHeight*.62);sparkBurst(screen.clientWidth/2,screen.clientHeight*.62,22);
+  setText('rmsg',att==='yes'?'Chúng mình rất vui vì bạn sẽ có mặt trong ngày vui ✨':'Cảm ơn lời chúc của bạn, chúng mình rất trân trọng 💌');
+  dynamic('💌 Đã nhận lời chúc','active',1300);
+  if(API_URL.includes('YOUR_ID'))return;
+  try{await fetch(API_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify({name,wish,att,createdAt:new Date().toISOString()})})}catch(e){}
+});
+
+const liveNames=['Minh Anh','Hoàng Nam','Phương','Hà My','Đức Anh','Bảo Ngọc','Thùy Linh'];
+const liveTexts=['Concept LoveOS đẹp quá ✨','Chúc hai bạn hạnh phúc nha!','Hẹn gặp ngày cưới nhé','Thiệp lạ và sang quá','Mãi yêu thương nhau nha','Chúc mừng cô dâu chú rể'];
+function liveBubble(name,text){
+  const live=$('live');
+  const box=document.createElement('div');
+  box.className='live-bubble';
+  box.innerHTML='<b></b> <span></span>';
+  box.querySelector('b').textContent=name+':';
+  box.querySelector('span').textContent=' '+text;
+  live.appendChild(box);
+  while(live.children.length>4)live.removeChild(live.firstChild);
+  setTimeout(()=>{box.style.opacity='0';setTimeout(()=>box.remove(),420)},5200);
+}
+function startLive(){
+  if(liveTimer)return;
+  liveTimer=setInterval(()=>liveBubble(liveNames[Math.floor(Math.random()*liveNames.length)],liveTexts[Math.floor(Math.random()*liveTexts.length)]),PERF.lowPower?6200:4300);
+}
+$('sendQuick').addEventListener('click',()=>{
+  const input=$('quickWish');
+  const text=input.value.trim();
+  if(!text)return;
+  const name=guest==='Quý Khách'?'Bạn':guest;
+  liveBubble(name,text);addWish(name,text);input.value='';
+  popHeart(screen.clientWidth-70,screen.clientHeight-80);dynamic('💗 Đã gửi lời chúc nhanh','active',1200);
+});
+$('quickWish').addEventListener('keydown',e=>{if(e.key==='Enter')$('sendQuick').click()});
+
+function popHeart(x,y){
+  if(PERF.reduceMotion)return;
+  const layer=$('heartLayer') || screen;
+  if(layer.children.length>PERF.heartCap+4)return;
+  const h=document.createElement('div');
+  h.className='heart';
+  h.textContent=['💗','🌸','✨','💕','🤍'][Math.floor(Math.random()*5)];
+  h.style.left=(x-13)+'px';h.style.top=(y-13)+'px';
+  layer.appendChild(h);setTimeout(()=>h.remove(),1350);
+}
+function heartStorm(count=12){
+  const safeCount=Math.min(count,PERF.heartCap);
+  for(let i=0;i<safeCount;i++)setTimeout(()=>popHeart(screen.clientWidth/2+(Math.random()-.5)*170,screen.clientHeight*.68+(Math.random()-.5)*70),i*92);
+}
+$('heartBtn').addEventListener('click',e=>popHeart(e.clientX-screen.getBoundingClientRect().left,e.clientY-screen.getBoundingClientRect().top));
+$('topHeart').addEventListener('click',()=>heartStorm(6));
+$('homeHeart').addEventListener('click',()=>heartStorm(6));
+$('dockHeartHome').addEventListener('click',()=>heartStorm(6));
+$('moreHeart').addEventListener('click',()=>heartStorm(9));
+
+function makePetal(){
+  if(PERF.reduceMotion)return;
+  const layer=$('petalLayer') || screen;
+  if(layer.children.length>PERF.petalLimit)return;
+  const p=document.createElement('div');
+  p.className='petal';
+  p.textContent=['🌸','♡','✨','💗','✦'][Math.floor(Math.random()*5)];
+  p.style.left=Math.random()*100+'%';
+  p.style.top='-42px';
+  p.style.fontSize=(12+Math.random()*(PERF.lowPower?7:10))+'px';
+  p.style.setProperty('--d',(8+Math.random()*5)+'s');
+  p.style.setProperty('--x',((Math.random()-.5)*(PERF.lowPower?86:120))+'px');
+  p.style.setProperty('--r',((Math.random()>.5?1:-1)*(110+Math.random()*190))+'deg');
+  layer.appendChild(p);setTimeout(()=>p.remove(),13500);
+}
+function startPetals(){if(petalTimer || PERF.reduceMotion)return;petalTimer=setInterval(makePetal,PERF.petalInterval)}
+
+$('openGift').addEventListener('click',()=>{$('envelope').classList.toggle('open');dynamic($('envelope').classList.contains('open')?'🎁 Phong bì đã mở':'🎁 Gift Wallet','active',1200);sparkBurst(screen.clientWidth/2,screen.clientHeight*.55,18)});
+
+// Anchor links inside the scrollable app.
+document.querySelectorAll('.wedding-app a[href^="#"]').forEach(link=>{
+  link.addEventListener('click',e=>{
+    const id=link.getAttribute('href').slice(1);
+    const el=$(id);
+    if(!el)return;
+    e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+
+
+// V12 Lite: continuous hearts, but capped to avoid mobile/GitHub Pages lag.
+const floatingHeartsAllWeb=document.getElementById('floatingHeartsAllWeb');
+let floatingHeartsAllTimer=null;
+
+function spawnFloatingHeartAllWeb(){
+  if(!floatingHeartsAllWeb || PERF.reduceMotion)return;
+  if(floatingHeartsAllWeb.children.length>=PERF.maxFloatingHearts)return;
+  const heart=document.createElement('span');
+  const filled=Math.random()>.82;
+  heart.className='float-heart-all'+(filled?' fill':'')+(Math.random()>.78?' tiny':'');
+  heart.textContent=filled?'♥':'♡';
+
+  const size=14+Math.random()*(PERF.lowPower?17:23);
+  const opacity=0.22+Math.random()*(PERF.lowPower?0.22:0.30);
+  const duration=10+Math.random()*6;
+  const drift=(Math.random()*(PERF.lowPower?84:130)-(PERF.lowPower?42:65));
+  const startRot=(Math.random()*44-22);
+  const endRot=startRot+(Math.random()*86-43);
+
+  heart.style.setProperty('--x',(4+Math.random()*92).toFixed(2)+'%');
+  heart.style.setProperty('--s',size.toFixed(1)+'px');
+  heart.style.setProperty('--o',opacity.toFixed(2));
+  heart.style.setProperty('--dur',duration.toFixed(2)+'s');
+  heart.style.setProperty('--drift',drift.toFixed(1)+'px');
+  heart.style.setProperty('--rot',startRot.toFixed(1)+'deg');
+  heart.style.setProperty('--rotEnd',endRot.toFixed(1)+'deg');
+  heart.style.setProperty('--endScale',(1.02+Math.random()*0.34).toFixed(2));
+
+  floatingHeartsAllWeb.appendChild(heart);
+  setTimeout(()=>heart.remove(),Math.ceil(duration*1000)+450);
+}
+
+function startFloatingHeartsAllWeb(){
+  if(!floatingHeartsAllWeb || floatingHeartsAllTimer || PERF.reduceMotion)return;
+  for(let i=0;i<PERF.initialHearts;i++)setTimeout(spawnFloatingHeartAllWeb,i*210);
+  floatingHeartsAllTimer=setInterval(()=>{
+    spawnFloatingHeartAllWeb();
+    if(!PERF.lowPower && Math.random()>.72)setTimeout(spawnFloatingHeartAllWeb,220);
+  },PERF.floatingInterval);
+}
+startFloatingHeartsAllWeb();
+
+</script>
+</body>
+</html>
