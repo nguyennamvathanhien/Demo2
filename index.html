@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover" />
-<title>Đức Hải & Ngọc Linh – V12 Lite LoveOS Invitation</title>
+<title>Đức Hải & Ngọc Linh – V11.4 LoveOS iPhone Invitation</title>
 <meta name="theme-color" content="#0d1018" />
-<meta name="description" content="Thiệp cưới V12 Lite LoveOS – Đức Hải & Ngọc Linh, 28.06.2026" />
-<meta property="og:title" content="Đức Hải & Ngọc Linh – Wedding Invitation V12 Lite" />
+<meta name="description" content="Thiệp cưới V11 LoveOS – Đức Hải & Ngọc Linh, 28.06.2026" />
+<meta property="og:title" content="Đức Hải & Ngọc Linh – Wedding Invitation V11.4" />
 <meta property="og:description" content="LoveOS iPhone Invitation – 28.06.2026" />
 <meta property="og:image" content="1.webp" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700;900&family=Great+Vibes&family=Playfair+Display:wght@500;600;700;800&display=swap&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700;900&family=Great+Vibes&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet" />
 <style>
 :root{
   --bg:#070910;
@@ -187,7 +187,6 @@ img{display:block;max-width:100%;object-fit:cover}
 .lockscreen-spacer{flex:1}
 .unlock-pill{
   width:min(330px,88%);height:58px;border-radius:999px;
-  
   background:rgba(255,255,255,.22);border:1px solid rgba(255,255,255,.26);
   backdrop-filter:blur(20px);color:#fff;display:flex;align-items:center;justify-content:center;gap:.55rem;
   font-size:.82rem;font-weight:800;box-shadow:0 16px 38px rgba(0,0,0,.18);position:relative;overflow:hidden;
@@ -225,257 +224,8 @@ img{display:block;max-width:100%;object-fit:cover}
 [data-reveal]{opacity:0;transform:translateY(34px);filter:blur(10px);transition:opacity .85s var(--ease),transform .85s var(--ease),filter .85s var(--ease)}[data-reveal].show{opacity:1;transform:none;filter:none}[data-reveal="left"]{transform:translateX(-34px);filter:blur(10px)}[data-reveal="right"]{transform:translateX(34px);filter:blur(10px)}[data-reveal="zoom"]{transform:scale(.88);filter:blur(12px)}[data-delay="1"]{transition-delay:.1s}[data-delay="2"]{transition-delay:.22s}[data-delay="3"]{transition-delay:.36s}[data-delay="4"]{transition-delay:.5s}
 
 /* HERO */
-
-.hero{
-  min-height:calc(100svh - 90px);
-  display:block;
-  padding:0;
-  overflow:hidden;
-  background:#fff0f4;
-  isolation:isolate;
-}
-.hero-photo{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-position:center top;
-  transform:scale(1.018);
-  filter:saturate(1.04) contrast(1.02) brightness(1.02);
-  animation:heroBreath 15s ease-in-out infinite alternate;
-}
-.hero:before{
-  content:'';
-  position:absolute;
-  inset:0;
-  z-index:1;
-  pointer-events:none;
-  background:
-    linear-gradient(to bottom,transparent 0%,transparent 50%,rgba(34,24,21,.16) 72%,rgba(18,12,12,.60) 100%),
-    radial-gradient(circle at 8% 82%,rgba(var(--rose-rgb),.18),transparent 36%),
-    radial-gradient(circle at 92% 74%,rgba(var(--gold-rgb),.13),transparent 34%);
-}
-.hero:after{
-  content:'';
-  position:absolute;
-  left:0;right:0;bottom:0;
-  height:42%;
-  z-index:1;
-  pointer-events:none;
-  background:
-    linear-gradient(to top,rgba(0,0,0,.38),rgba(0,0,0,.12) 48%,transparent),
-    linear-gradient(90deg,rgba(0,0,0,.18),transparent 55%);
-}
-@keyframes heroBreath{
-  from{transform:scale(1.018) translateY(0)}
-  to{transform:scale(1.065) translateY(-7px)}
-}
-.hero-fx{
-  position:absolute;
-  inset:0;
-  z-index:2;
-  pointer-events:none;
-  overflow:hidden;
-}
-.hero-glow{
-  position:absolute;
-  border-radius:50%;
-  filter:blur(14px);
-  opacity:.55;
-  mix-blend-mode:screen;
-  animation:glowDrift 8s ease-in-out infinite;
-}
-.hero-glow.g1{width:92px;height:92px;left:8%;bottom:22%;background:rgba(var(--rose-rgb),.34)}
-.hero-glow.g2{width:68px;height:68px;right:14%;bottom:32%;background:rgba(var(--gold-rgb),.24);animation-delay:1.2s}
-.hero-glow.g3{width:48px;height:48px;left:44%;top:18%;background:rgba(255,255,255,.30);animation-delay:2.1s}
-@keyframes glowDrift{
-  50%{transform:translateY(-22px) translateX(10px) scale(1.12);opacity:.75}
-}
-.hero-heart{
-  position:absolute;
-  color:rgba(255,255,255,.56);
-  font-size:1.25rem;
-  filter:drop-shadow(0 8px 18px rgba(0,0,0,.18));
-  animation:heroHeartFloat var(--hd,6s) ease-in-out infinite;
-}
-.hero-heart.h1{left:10%;top:22%;--hd:6.4s}
-.hero-heart.h2{left:84%;top:31%;font-size:1rem;--hd:7.2s;animation-delay:.8s}
-.hero-heart.h3{left:72%;bottom:28%;font-size:1.4rem;--hd:5.8s;animation-delay:1.6s}
-.hero-heart.h4{left:28%;bottom:38%;font-size:.92rem;--hd:7.8s;animation-delay:2.4s}
-.hero-heart.h5{left:52%;top:12%;font-size:.86rem;--hd:6.9s;animation-delay:3.2s}
-@keyframes heroHeartFloat{
-  0%,100%{transform:translate3d(0,0,0) scale(.92);opacity:.18}
-  35%{opacity:.72}
-  55%{transform:translate3d(10px,-42px,0) scale(1.15);opacity:.50}
-}
-.hero-shine{
-  position:absolute;
-  inset:-20% -60%;
-  z-index:2;
-  background:linear-gradient(115deg,transparent 42%,rgba(255,255,255,.26) 49%,transparent 56%);
-  transform:translateX(-55%) rotate(3deg);
-  animation:heroShine 6.8s ease-in-out infinite;
-  opacity:.45;
-}
-@keyframes heroShine{
-  0%,42%{transform:translateX(-55%) rotate(3deg);opacity:0}
-  58%{opacity:.52}
-  82%,100%{transform:translateX(55%) rotate(3deg);opacity:0}
-}
-.hero-composition{
-  position:relative;
-  z-index:3;
-  min-height:inherit;
-  width:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  padding:clamp(74px,11vh,108px) 1.08rem 6.55rem 1.08rem;
-}
-.hero-topline{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:.8rem;
-  color:rgba(39,31,29,.74);
-  font-size:.56rem;
-  font-weight:900;
-  letter-spacing:.34em;
-  text-transform:uppercase;
-  text-shadow:0 2px 12px rgba(255,255,255,.72);
-}
-.hero-topline span:last-child{
-  letter-spacing:.22em;
-  color:rgba(var(--rose-rgb),.86);
-}
-.hero-copy{
-  max-width:320px;
-  text-align:left;
-  color:#fff;
-  text-shadow:0 10px 34px rgba(0,0,0,.34);
-  margin-bottom:clamp(8px,3vh,32px);
-}
-.hero-eyebrow{
-  display:inline-flex;
-  align-items:center;
-  gap:.56rem;
-  color:rgba(255,255,255,.88);
-  font-size:.56rem;
-  font-weight:900;
-  letter-spacing:.36em;
-  text-transform:uppercase;
-  margin-bottom:.78rem;
-}
-.hero-eyebrow:before{
-  content:'';
-  width:34px;height:1px;
-  background:linear-gradient(90deg,var(--rose),rgba(255,255,255,.62),transparent);
-}
-.hero-title-free{
-  font-family:var(--serif);
-  font-size:clamp(2.66rem,13.4vw,4.36rem);
-  line-height:.86;
-  letter-spacing:-.065em;
-  font-weight:500;
-  color:#fff;
-  max-width:315px;
-}
-.hero-title-free .name-line{
-  display:block;
-}
-.hero-title-free i{
-  display:block;
-  font-family:var(--script);
-  font-size:.82em;
-  font-style:normal;
-  line-height:.62;
-  letter-spacing:0;
-  color:var(--rose);
-  text-shadow:0 8px 24px rgba(255,255,255,.22),0 8px 26px rgba(0,0,0,.18);
-  margin:.09em 0 .03em;
-  transform:translateX(86px);
-}
-.hero-copy p{
-  max-width:282px;
-  margin:1rem 0 0;
-  color:rgba(255,255,255,.88);
-  font-size:.81rem;
-  line-height:1.7;
-}
-.hero-date-line{
-  display:flex;
-  flex-wrap:wrap;
-  gap:.42rem .68rem;
-  align-items:center;
-  margin-top:1rem;
-  color:rgba(255,255,255,.95);
-  font-size:.61rem;
-  font-weight:900;
-  letter-spacing:.21em;
-  text-transform:uppercase;
-}
-.hero-date-line span{
-  position:relative;
-  padding-bottom:.34rem;
-}
-.hero-date-line span:after{
-  content:'';
-  position:absolute;
-  left:0;right:.22em;bottom:0;height:1px;
-  background:linear-gradient(90deg,var(--rose),rgba(255,255,255,.56),transparent);
-}
-.hero-guest{
-  max-width:142px;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-}
-.hero-pulse{
-  position:absolute;
-  left:1.08rem;
-  bottom:5.62rem;
-  z-index:4;
-  display:flex;
-  align-items:center;
-  gap:.48rem;
-  color:rgba(255,255,255,.78);
-  font-size:.62rem;
-  font-weight:800;
-  letter-spacing:.16em;
-  text-transform:uppercase;
-}
-.hero-pulse i{
-  width:8px;height:8px;
-  border-radius:50%;
-  background:var(--rose);
-  box-shadow:0 0 0 0 rgba(var(--rose-rgb),.55);
-  animation:pulseDot 1.8s ease-out infinite;
-}
-@keyframes pulseDot{
-  70%{box-shadow:0 0 0 12px rgba(var(--rose-rgb),0)}
-  100%{box-shadow:0 0 0 0 rgba(var(--rose-rgb),0)}
-}
-.scroll-cue{
-  position:absolute;
-  right:1.05rem;
-  bottom:5.28rem;
-  z-index:4;
-  color:rgba(255,255,255,.86);
-  font-size:1.35rem;
-  text-shadow:0 7px 18px rgba(0,0,0,.25);
-  animation:cue 1.6s ease-in-out infinite;
-}
-@keyframes cue{50%{transform:translateY(7px)}}
-@media(max-width:390px){
-  .hero-composition{padding:76px .95rem 6.35rem .95rem}
-  .hero-topline{font-size:.50rem;letter-spacing:.26em}
-  .hero-topline span:last-child{letter-spacing:.16em}
-  .hero-title-free{font-size:clamp(2.36rem,13.2vw,3.72rem);max-width:270px;letter-spacing:-.056em}
-  .hero-title-free i{transform:translateX(70px);font-size:.78em}
-  .hero-copy{max-width:274px}
-  .hero-copy p{max-width:244px;font-size:.78rem}
-  .hero-pulse{bottom:5.35rem;font-size:.56rem}
-}
+.hero{min-height:calc(100svh - 90px);display:flex;align-items:flex-end;padding:0 1.05rem 1.4rem;overflow:hidden;background:#fff0f4}.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-position:center top;transform:scale(1.04);animation:ken 12s ease-in-out infinite alternate}.hero:after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(255,249,244,.75),rgba(255,249,244,.06) 34%,rgba(255,249,244,.22) 62%,rgba(255,249,244,.96)),radial-gradient(circle at 50% 78%,rgba(255,255,255,.74),transparent 44%)}@keyframes ken{to{transform:scale(1.1) translateY(-14px)}}
+.hero-card{position:relative;z-index:2;width:100%;border-radius:40px;padding:1.35rem 1.1rem 1.45rem;background:rgba(255,255,255,.70);border:1px solid rgba(197,160,106,.25);box-shadow:var(--shadow);backdrop-filter:blur(18px);text-align:center;overflow:hidden}.hero-card:before{content:'LOVEOS · INVITATION APP';position:absolute;top:.75rem;left:50%;transform:translateX(-50%);font-size:.48rem;letter-spacing:.19em;font-weight:900;color:var(--gold);background:rgba(255,255,255,.68);border:1px solid rgba(197,160,106,.22);padding:.28rem .62rem;border-radius:999px;white-space:nowrap}.hero-card h1{font-family:var(--serif);font-size:clamp(2.75rem,13vw,4.65rem);line-height:.82;letter-spacing:-.08em;margin-top:1.35rem}.hero-card h1 span{display:block;font-family:var(--script);font-size:.95em;line-height:.7;color:var(--rose);font-weight:400;margin:.08em 0}.hero-card p{max-width:315px;margin:1rem auto 0;color:var(--muted);font-size:.85rem;line-height:1.72}.hero-chips{display:flex;justify-content:center;gap:.45rem;flex-wrap:wrap;margin-top:1rem}.chip{border:1px solid rgba(197,160,106,.22);background:rgba(255,249,244,.72);border-radius:999px;padding:.48rem .68rem;font-size:.68rem;font-weight:900;color:var(--muted)}.scroll-cue{position:absolute;left:50%;bottom:.7rem;transform:translateX(-50%);z-index:3;color:var(--rose);font-size:1.4rem;animation:cue 1.6s ease-in-out infinite}@keyframes cue{50%{transform:translateX(-50%) translateY(7px)}}
 
 /* CARDS */
 .card{background:rgba(255,255,255,.75);border:1px solid rgba(197,160,106,.22);border-radius:34px;box-shadow:var(--soft);backdrop-filter:blur(15px);overflow:hidden}.card-pad{padding:1.08rem}.grid{display:grid;gap:.82rem}.audio-card{margin-top:1.7rem}.audio-row{display:grid;grid-template-columns:82px 1fr;gap:1rem;align-items:center}.record{width:82px;height:82px;border-radius:50%;padding:6px;background:conic-gradient(from 90deg,#fff,var(--rose2),var(--gold2),#fff);box-shadow:0 12px 28px rgba(83,45,33,.12);position:relative}.record img{width:100%;height:100%;border-radius:50%;border:3px solid #fff;animation:spin 9s linear infinite;animation-play-state:paused}.record.playing img{animation-play-state:running}.record:after{content:'';position:absolute;inset:50% auto auto 50%;width:14px;height:14px;border-radius:50%;background:#fff;transform:translate(-50%,-50%);box-shadow:0 0 0 1px rgba(0,0,0,.08)}@keyframes spin{to{transform:rotate(360deg)}}.song-small{font-size:.56rem;font-weight:900;letter-spacing:.21em;text-transform:uppercase;color:var(--gold)}.song-title{font-family:var(--serif);font-size:1.45rem;font-weight:700;letter-spacing:-.03em;margin:.15rem 0}.song-sub{color:var(--muted);font-size:.74rem}.wave{height:22px;display:flex;align-items:center;gap:3px;margin:.7rem 0 .55rem}.wave i{width:4px;height:8px;border-radius:999px;background:linear-gradient(to top,var(--rose),var(--gold2));opacity:.58;animation:wave 1s ease-in-out infinite;animation-play-state:paused}.wave.playing i{animation-play-state:running}.wave i:nth-child(2n){animation-delay:.12s}.wave i:nth-child(3n){animation-delay:.24s}.wave i:nth-child(5n){animation-delay:.36s}@keyframes wave{50%{height:22px;opacity:1}}.audio-actions{display:flex;gap:.5rem}.audio-actions button{border-radius:999px;padding:.62rem .82rem;background:#fff7f1;border:1px solid rgba(197,160,106,.18);font-weight:900}.audio-actions #playBtn{flex:1;background:linear-gradient(135deg,var(--rose2),var(--rose));color:#fff;border:none;box-shadow:0 12px 24px rgba(217,132,150,.22)}
@@ -576,129 +326,72 @@ img{display:block;max-width:100%;object-fit:cover}
 
 
 
-/* V11.8 addition: transparent light-pink hearts floating through the whole web */
-.floating-hearts-all{
-  position:absolute;
-  inset:0;
-  z-index:960;
-  pointer-events:none;
-  overflow:hidden;
-  border-radius:inherit;
-}
-.float-heart-all{
-  position:absolute;
-  left:var(--x,50%);
-  bottom:-58px;
-  display:block;
-  line-height:1;
-  font-size:var(--s,22px);
-  color:rgba(246,199,209,var(--o,.38));
-  opacity:0;
-  transform:translate3d(0,0,0) rotate(var(--rot,0deg)) scale(.72);
-  filter:blur(var(--blur,0px)) drop-shadow(0 10px 18px rgba(246,199,209,.24));
-  text-shadow:0 0 18px rgba(255,255,255,.30);
-  mix-blend-mode:screen;
-  will-change:transform,opacity;
-  animation:globalHeartRise var(--dur,10s) linear forwards;
-}
-.float-heart-all.fill{
-  color:rgba(255,226,234,var(--o,.34));
-}
-.float-heart-all.tiny{
-  filter:blur(.25px) drop-shadow(0 8px 14px rgba(246,199,209,.18));
-}
-@keyframes globalHeartRise{
-  0%{
-    opacity:0;
-    transform:translate3d(0,0,0) rotate(var(--rot,0deg)) scale(.62);
-  }
-  9%{opacity:var(--o,.38)}
-  72%{opacity:calc(var(--o,.38) * .92)}
-  100%{
-    opacity:0;
-    transform:translate3d(var(--drift,0px),-110svh,0) rotate(var(--rotEnd,40deg)) scale(var(--endScale,1.22));
-  }
-}
-@media (prefers-reduced-motion:reduce){
-  .floating-hearts-all{display:none}
-}
-
-
-
-/* V12 Lite performance layer: keeps the same romantic look but reduces paint/GPU work */
-:root{
-  --perf-soft-shadow:0 10px 24px rgba(83,45,33,.10);
-}
-.phone,.screen,.wedding-app,.app-scroll,.section,.card,.gallery-item,.portrait,.cer-card{
-  contain:layout paint style;
-}
-.section:not(.hero):not(.closing){
-  content-visibility:auto;
-  contain-intrinsic-size:760px;
-}
-.app-scroll{
-  scroll-behavior:auto;
-}
-.card,.portrait,.gallery-item,.ios-widget,.home-dock,.app-dock,.live-bubble{
-  box-shadow:var(--perf-soft-shadow);
-}
-.hero-photo{
-  animation-duration:24s;
-}
-.hero-glow{
-  filter:blur(7px);
-  opacity:.42;
-}
-.hero-shine{
-  animation-duration:9s;
-  opacity:.28;
-}
-.float-heart-all{
-  filter:none!important;
-  mix-blend-mode:normal!important;
-  text-shadow:0 0 8px rgba(255,255,255,.18);
-  will-change:transform,opacity;
-}
-.float-heart-all.tiny{
-  filter:none!important;
-}
-.petal,.heart,.spark{
-  will-change:transform,opacity;
-}
-.gallery-item:hover img{
-  transform:none;
-}
-@media(max-width:480px){
-  .device-glow,.hero-glow.g3{display:none!important}
-  .phone{box-shadow:0 22px 44px rgba(0,0,0,.38),inset 0 0 0 1px rgba(255,255,255,.10)}
-  .phone:before{opacity:.45}
-  .lock-widget,.unlock-pill,.ios-widget,.home-dock,.app-topbar,.app-dock,.card,.plaque,.photo-label,.live-bubble,.closing-actions a,.closing-actions button{
-    backdrop-filter:none!important;
-    -webkit-backdrop-filter:none!important;
-  }
-  [data-reveal]{filter:none!important;transition-duration:.58s!important}
-  .phone.app-open .home-screen{filter:none!important}
-  .phone.unlocked .lock-screen{filter:none!important}
-  .hero-photo{animation-duration:32s}
-  .hero-heart{animation-duration:9s!important;opacity:.34}
-  .hero-shine{display:none!important}
-  .record img{animation-duration:14s}
-  .wave i{animation-duration:1.4s}
-  .float-heart-all{text-shadow:none!important}
-}
-@media (prefers-reduced-motion:reduce){
-  .petal-layer,.heart-layer,.confetti-layer,.floating-hearts-all,.hero-fx{display:none!important}
-}
+/* V11.4 Sender Mode — static friendly for GitHub Pages */
+.sender-console{display:none;position:relative;z-index:5000;width:min(560px,100%);padding:18px;}
+body.sender-mode{overflow:auto;min-height:100svh;padding:18px;place-items:center;background:
+  radial-gradient(circle at 20% 0%,rgba(246,199,209,.32),transparent 30%),
+  radial-gradient(circle at 100% 18%,rgba(239,217,163,.24),transparent 30%),
+  linear-gradient(145deg,#070910,#151827 55%,#0a0c13);}
+body.sender-mode .device-wrap{display:none!important;}
+body.sender-mode .sender-console{display:block;}
+.sender-shell{background:rgba(255,249,244,.97);border:1px solid rgba(255,255,255,.18);border-radius:38px;padding:22px;box-shadow:0 34px 90px rgba(0,0,0,.42);color:var(--ink);}
+.sender-head{display:flex;gap:14px;align-items:center;margin-bottom:18px;}
+.sender-logo{width:56px;height:56px;border-radius:19px;display:grid;place-items:center;background:linear-gradient(135deg,var(--rose2),var(--rose));color:#fff;font-family:var(--serif);font-weight:800;font-size:1.05rem;box-shadow:0 12px 26px rgba(217,132,150,.28);flex:0 0 auto;}
+.sender-head small{display:block;color:var(--gold);font-weight:900;letter-spacing:.18em;text-transform:uppercase;font-size:.57rem;}
+.sender-head h1{font-family:var(--serif);font-size:1.9rem;line-height:1;margin-top:.28rem;letter-spacing:-.045em;}
+.sender-intro{color:var(--muted);font-size:.86rem;line-height:1.65;margin:0 0 18px;}
+.sender-field label{display:block;color:var(--gold);font-size:.6rem;font-weight:900;letter-spacing:.18em;text-transform:uppercase;margin-bottom:8px;}
+.sender-field input{width:100%;border:1px solid rgba(197,160,106,.24);background:#fff;border-radius:20px;padding:15px 16px;outline:none;font-size:1rem;box-shadow:inset 0 1px 0 rgba(0,0,0,.02);}
+.sender-field input:focus{border-color:rgba(217,132,150,.65);box-shadow:0 0 0 4px rgba(217,132,150,.10);}
+.sender-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px;}
+.sender-btn{border-radius:999px;padding:14px 14px;font-weight:900;font-size:.86rem;background:#fff;border:1px solid rgba(197,160,106,.22);box-shadow:0 9px 20px rgba(83,45,33,.08);}
+.sender-btn.primary{background:linear-gradient(135deg,var(--rose2),var(--rose));color:#fff;border:none;box-shadow:0 13px 28px rgba(217,132,150,.28);}
+.sender-preview{margin-top:18px;border-radius:27px;padding:16px;background:linear-gradient(135deg,#fff,#fff7f1);border:1px solid rgba(197,160,106,.18);}
+.sender-preview small{display:block;color:var(--gold);font-size:.56rem;font-weight:900;letter-spacing:.16em;text-transform:uppercase;margin-bottom:8px;}
+.sender-invite-line{font-family:var(--serif);font-size:1.18rem;line-height:1.3;}
+.sender-invite-line strong{color:var(--rose);font-weight:700;}
+.sender-link{margin-top:10px;padding:11px 12px;border-radius:15px;background:rgba(255,255,255,.84);border:1px dashed rgba(197,160,106,.28);font-size:.7rem;line-height:1.45;word-break:break-all;color:var(--muted);}
+.sender-status{min-height:1.4em;text-align:center;color:var(--rose);font-weight:800;font-size:.78rem;margin-top:12px;}
+.sender-tip{margin-top:13px;text-align:center;color:var(--muted);font-size:.7rem;line-height:1.5;}
+.sender-open{display:block;text-align:center;margin-top:10px;color:var(--rose);font-weight:900;font-size:.78rem;}
+@media(max-width:520px){body.sender-mode{padding:0}.sender-console{padding:12px}.sender-shell{border-radius:30px;padding:18px}.sender-actions{grid-template-columns:1fr}.sender-head h1{font-size:1.62rem}}
 
 </style>
 </head>
 <body>
+
+<!-- V11.4: owner-only sender mode, activated with ?send=1 -->
+<section class="sender-console" id="senderConsole" aria-label="Chế độ gửi thiệp">
+  <div class="sender-shell">
+    <div class="sender-head">
+      <div class="sender-logo">HL</div>
+      <div><small>LoveOS · Sender Mode</small><h1>Tạo thiệp cá nhân</h1></div>
+    </div>
+    <p class="sender-intro">Nhập tên khách mời. LoveOS sẽ tự tạo link cá nhân hóa để bạn gửi qua Zalo, Messenger, WhatsApp, Messages hoặc copy thủ công.</p>
+    <div class="sender-field">
+      <label for="senderGuest">Tên khách mời</label>
+      <input id="senderGuest" type="text" inputmode="text" autocomplete="name" maxlength="80" placeholder="Ví dụ: Anh Nguyễn Văn An" />
+    </div>
+    <div class="sender-actions">
+      <button class="sender-btn primary" id="shareInvite" type="button">💌 Gửi thiệp</button>
+      <button class="sender-btn" id="copyInvite" type="button">📋 Copy link</button>
+    </div>
+    <div class="sender-preview">
+      <small>Xem trước</small>
+      <div class="sender-invite-line">Trân trọng kính mời <strong id="senderPreviewName">Quý Khách</strong></div>
+      <div class="sender-link" id="senderPreviewLink">Nhập tên khách mời để tạo link…</div>
+      <a class="sender-open" id="openGuestLink" href="#" target="_blank" rel="noopener" hidden>↗ Mở thử thiệp của khách</a>
+    </div>
+    <div class="sender-status" id="senderStatus" aria-live="polite"></div>
+    <div class="sender-tip">Mẹo: lưu trang <b>?send=1</b> vào bookmark. Khách chỉ nhận link <b>?guest=Tên</b>, không thấy màn hình này.</div>
+  </div>
+</section>
+
 <div class="device-wrap">
   <div class="device-glow"></div>
   <main class="phone" id="phone">
     <div class="phone-buttons"></div>
     <div class="screen" id="screen">
-      <div class="floating-hearts-all" id="floatingHeartsAllWeb" aria-hidden="true"></div>
       <div class="statusbar" id="statusbar">
         <span id="statusTime">09:41</span>
         <span class="status-icons"><span class="signal"><i></i><i></i><i></i><i></i></span> 5G <span class="battery"></span></span>
@@ -759,7 +452,7 @@ img{display:block;max-width:100%;object-fit:cover}
           <div class="app-topbar">
             <div class="app-brand">
               <div class="mini-logo">HL</div>
-              <div class="brand-copy"><small>LoveOS V12 Lite</small><b>Hải & Linh</b></div>
+              <div class="brand-copy"><small>LoveOS V11.3</small><b>Hải & Linh</b></div>
             </div>
             <div class="top-actions">
               <button id="topMusic" aria-label="Bật/tắt nhạc">♪</button>
@@ -769,32 +462,13 @@ img{display:block;max-width:100%;object-fit:cover}
           </div>
 
           <section class="section hero" id="hero">
-            <img class="hero-photo" src="1.webp" alt="Đức Hải và Ngọc Linh" decoding="async" fetchpriority="high" />
-            <div class="hero-fx" aria-hidden="true">
-              <span class="hero-glow g1"></span>
-              <span class="hero-glow g2"></span>
-              <span class="hero-glow g3"></span>
-              <span class="hero-heart h1">♡</span>
-              <span class="hero-heart h2">♡</span>
-              <span class="hero-heart h3">♡</span>
-              <span class="hero-heart h4">♡</span>
-              <span class="hero-heart h5">♡</span>
-              <span class="hero-shine"></span>
+            <img class="hero-photo" src="1.webp" alt="Đức Hải và Ngọc Linh" />
+            <div class="hero-card" data-reveal>
+              <h1>Đức Hải <span>&</span> Ngọc Linh</h1>
+              <p>Chào mừng bạn đến với LoveOS — một chiếc iPhone nhỏ chứa lời mời, câu chuyện, âm nhạc và ngày vui của chúng mình.</p>
+              <div class="hero-chips"><span class="chip">28.06.2026</span><span class="chip">Wedding Invitation</span><span class="chip" id="guestChip">Quý Khách</span></div>
             </div>
-            <div class="hero-composition">
-              <div class="hero-topline" data-reveal>
-
-              </div>
-              <div class="hero-copy" data-reveal data-delay="1">
-                <span class="hero-eyebrow">The beginning of forever</span>
-                <h1 class="hero-title-free"><span class="name-line">Đức Hải</span><i>&</i><span class="name-line">Ngọc Linh</span></h1>
-                <p>Một lời mời nhỏ, giản dị và đủ dịu dàng để bạn bước vào ngày vui của chúng mình.</p>
-                <div class="hero-date-line"><span>Chủ nhật</span><span>28 · 06 · 2026</span><span class="hero-guest" id="guestChip">Quý Khách</span></div>
-              </div>
-            </div>
-            <div class="hero-pulse"><i></i><span>Chạm để gửi tim</span></div>
             <div class="scroll-cue">⌄</div>
-          
           </section>
 
           <section class="section" id="ticketRoom">
@@ -805,7 +479,7 @@ img{display:block;max-width:100%;object-fit:cover}
 
             <div class="card audio-card" data-reveal="zoom">
               <div class="card-pad audio-row">
-                <div class="record" id="record"><img id="cover" src="3.webp" alt="Music cover" loading="lazy" decoding="async" /></div>
+                <div class="record" id="record"><img id="cover" src="3.webp" alt="Music cover" /></div>
                 <div>
                   <div class="song-small">LoveOS Audio</div>
                   <div class="song-title" id="songTitle">Unlock Waltz</div>
@@ -852,8 +526,8 @@ img{display:block;max-width:100%;object-fit:cover}
             <span class="script" data-reveal data-delay="2">Cô dâu & Chú rể</span>
             <p class="sub" data-reveal data-delay="3">Hai màn hình chân dung, hai câu chuyện, và một lời hẹn cùng nhau đi tiếp.</p>
             <div class="couple-wall">
-              <div class="portrait" data-reveal="left"><img src="2.webp" alt="Ngọc Linh" loading="lazy" decoding="async" /><div class="plaque"><small>Bride</small><h3>Ngọc Linh</h3></div></div>
-              <div class="portrait" data-reveal="right" data-delay="1"><img src="4.webp" alt="Đức Hải" loading="lazy" decoding="async" /><div class="plaque"><small>Groom</small><h3>Đức Hải</h3></div></div>
+              <div class="portrait" data-reveal="left"><img src="2.webp" alt="Ngọc Linh" /><div class="plaque"><small>Bride</small><h3>Ngọc Linh</h3></div></div>
+              <div class="portrait" data-reveal="right" data-delay="1"><img src="4.webp" alt="Đức Hải" /><div class="plaque"><small>Groom</small><h3>Đức Hải</h3></div></div>
             </div>
             <div class="card note-card" data-reveal data-delay="2">Trong LoveOS này, điều đẹp nhất không nằm ở hiệu ứng — mà là khoảnh khắc chúng mình được đứng cạnh nhau trong ngày quan trọng.</div>
           </section>
@@ -866,7 +540,7 @@ img{display:block;max-width:100%;object-fit:cover}
             <div class="segment" data-reveal data-delay="4"><button class="active" data-tab="groom">Nhà Trai</button><button data-tab="bride">Nhà Gái</button></div>
             <div class="cer-stage" data-reveal>
               <article class="cer-card active" id="groom">
-                <div class="cer-photo"><img src="8.webp" alt="Nhà Trai" loading="lazy" decoding="async" /></div>
+                <div class="cer-photo"><img src="8.webp" alt="Nhà Trai" /></div>
                 <div class="card cer-info">
                   <div class="cer-label">Groom's Ceremony</div><h2 class="cer-title">Tiệc cưới Nhà Trai</h2>
                   <div class="cer-row"><div class="cer-ico">🗓</div><div><b>Chủ nhật, 28/06/2026</b><span>Thời gian: 10:30 sáng</span></div></div>
@@ -875,7 +549,7 @@ img{display:block;max-width:100%;object-fit:cover}
                 </div>
               </article>
               <article class="cer-card" id="bride">
-                <div class="cer-photo"><img src="9.webp" alt="Nhà Gái" loading="lazy" decoding="async" /></div>
+                <div class="cer-photo"><img src="9.webp" alt="Nhà Gái" /></div>
                 <div class="card cer-info">
                   <div class="cer-label">Bride's Ceremony</div><h2 class="cer-title">Tiệc cưới Nhà Gái</h2>
                   <div class="cer-row"><div class="cer-ico">🗓</div><div><b>Chủ nhật, 28/06/2026</b><span>Thời gian: 17:30 chiều</span></div></div>
@@ -893,9 +567,9 @@ img{display:block;max-width:100%;object-fit:cover}
             <p class="sub" data-reveal data-delay="3">Mỗi lần cuộn là một mốc nhỏ, như đang xem lại bản đồ kỷ niệm trên điện thoại.</p>
             <div class="story" id="storyWrap">
               <div class="story-line"><span id="storyProgress"></span></div>
-              <div class="story-item" data-reveal><div class="story-dot">01</div><div class="card story-card"><div class="story-year">First Pin</div><h3 class="story-title">Một lần gặp gỡ</h3><p class="story-desc">Có những cuộc gặp rất nhẹ, nhưng lại ở lại thật lâu trong ký ức.</p><img src="5.webp" alt="Kỷ niệm 1" loading="lazy" decoding="async" /></div></div>
-              <div class="story-item" data-reveal><div class="story-dot">02</div><div class="card story-card"><div class="story-year">Second Pin</div><h3 class="story-title">Những ngày dịu dàng</h3><p class="story-desc">Tình yêu lớn lên từ những điều nhỏ: một tin nhắn, một buổi hẹn, một ánh nhìn.</p><img src="6.webp" alt="Kỷ niệm 2" loading="lazy" decoding="async" /></div></div>
-              <div class="story-item" data-reveal><div class="story-dot">03</div><div class="card story-card"><div class="story-year">Third Pin</div><h3 class="story-title">Lời hẹn của cả đời</h3><p class="story-desc">Khi câu trả lời là “Có”, mọi ngày phía trước bỗng trở thành một hành trình chung.</p><img src="7.webp" alt="Kỷ niệm 3" loading="lazy" decoding="async" /></div></div>
+              <div class="story-item" data-reveal><div class="story-dot">01</div><div class="card story-card"><div class="story-year">First Pin</div><h3 class="story-title">Một lần gặp gỡ</h3><p class="story-desc">Có những cuộc gặp rất nhẹ, nhưng lại ở lại thật lâu trong ký ức.</p><img src="5.webp" alt="Kỷ niệm 1" /></div></div>
+              <div class="story-item" data-reveal><div class="story-dot">02</div><div class="card story-card"><div class="story-year">Second Pin</div><h3 class="story-title">Những ngày dịu dàng</h3><p class="story-desc">Tình yêu lớn lên từ những điều nhỏ: một tin nhắn, một buổi hẹn, một ánh nhìn.</p><img src="6.webp" alt="Kỷ niệm 2" /></div></div>
+              <div class="story-item" data-reveal><div class="story-dot">03</div><div class="card story-card"><div class="story-year">Third Pin</div><h3 class="story-title">Lời hẹn của cả đời</h3><p class="story-desc">Khi câu trả lời là “Có”, mọi ngày phía trước bỗng trở thành một hành trình chung.</p><img src="7.webp" alt="Kỷ niệm 3" /></div></div>
               <div class="story-item" data-reveal><div class="story-dot">♡</div><div class="card story-card"><div class="story-year">28.06.2026</div><h3 class="story-title">Ngày tình yêu nở hoa</h3><p class="story-desc">Và chúng mình mong được gặp bạn trong căn phòng đẹp nhất của ngày ấy.</p></div></div>
             </div>
           </section>
@@ -906,11 +580,11 @@ img{display:block;max-width:100%;object-fit:cover}
             <span class="script" data-reveal data-delay="2">Những khoảnh khắc được chọn</span>
             <p class="sub" data-reveal data-delay="3">Bộ ảnh được đặt như các widget ảnh trong LoveOS — đủ nhẹ để xem nhanh, đủ đẹp để dừng lại lâu hơn.</p>
             <div class="gallery">
-              <div class="gallery-item big" data-reveal="zoom"><img src="10.webp" alt="Khoảnh khắc 1" loading="lazy" decoding="async" /><div class="photo-label">Widget A · The day begins softly.</div></div>
-              <div class="gallery-item tall" data-reveal="left"><img src="11.webp" alt="Khoảnh khắc 2" loading="lazy" decoding="async" /></div>
+              <div class="gallery-item big" data-reveal="zoom"><img src="10.webp" alt="Khoảnh khắc 1" /><div class="photo-label">Widget A · The day begins softly.</div></div>
+              <div class="gallery-item tall" data-reveal="left"><img src="11.webp" alt="Khoảnh khắc 2" /></div>
               <div class="gallery-item quote" data-reveal="right"><b>Love as<br />an app.</b><p>Một ứng dụng nhỏ lưu lại điều lớn nhất: được yêu và được chúc phúc.</p></div>
-              <div class="gallery-item small" data-reveal="left"><img src="12.webp" alt="Khoảnh khắc 3" loading="lazy" decoding="async" /></div>
-              <div class="gallery-item small" data-reveal="right"><img src="13.webp" alt="Khoảnh khắc 4" loading="lazy" decoding="async" /></div>
+              <div class="gallery-item small" data-reveal="left"><img src="12.webp" alt="Khoảnh khắc 3" /></div>
+              <div class="gallery-item small" data-reveal="right"><img src="13.webp" alt="Khoảnh khắc 4" /></div>
             </div>
           </section>
 
@@ -971,7 +645,7 @@ img{display:block;max-width:100%;object-fit:cover}
           </section>
 
           <section class="section closing" id="closing">
-            <img class="closing-bg" src="18.webp" alt="Thank you" loading="lazy" decoding="async" />
+            <img class="closing-bg" src="18.webp" alt="Thank you" />
             <div class="closing-content"><span class="kicker" data-reveal>Final Screen · See you on 28.06.2026</span><div class="thanks" data-reveal data-delay="1">Thank You</div><div class="closing-names" data-reveal data-delay="2">Đức Hải & Ngọc Linh</div><div class="closing-actions" data-reveal data-delay="3"><a href="#ticketRoom">Xem lại vé mời</a><a href="#ceremonyRoom">Xem lịch cưới</a><button id="moreHeart">Bắn tim</button></div></div>
           </section>
         </div>
@@ -999,32 +673,10 @@ const appScroll=document.getElementById('appScroll');
 const island=document.getElementById('island');
 const islandText=document.getElementById('islandText');
 const audio=document.getElementById('audio');
-
-const PERF={
-  reduceMotion:window.matchMedia('(prefers-reduced-motion: reduce)').matches,
-  mobile:window.matchMedia('(max-width: 480px)').matches,
-  lowPower:false,
-  maxFloatingHearts:26,
-  initialHearts:14,
-  floatingInterval:950,
-  petalLimit:14,
-  petalInterval:1350,
-  sparkCap:24,
-  heartCap:10
-};
-PERF.lowPower=PERF.mobile || (navigator.hardwareConcurrency && navigator.hardwareConcurrency<=4) || (navigator.deviceMemory && navigator.deviceMemory<=4) || (navigator.connection && navigator.connection.saveData);
-if(PERF.lowPower){
-  PERF.maxFloatingHearts=16;
-  PERF.initialHearts=8;
-  PERF.floatingInterval=1450;
-  PERF.petalLimit=8;
-  PERF.petalInterval=1900;
-  PERF.sparkCap=14;
-  PERF.heartCap=6;
-}
-
 const params=new URLSearchParams(location.search);
 const guest=params.get('guest')?decodeURIComponent(params.get('guest').replace(/\+/g,' ')):'Quý Khách';
+const senderMode=params.get('send')==='1';
+if(senderMode) document.body.classList.add('sender-mode');
 let playing=false;
 let opened=false;
 let liveTimer=null;
@@ -1055,6 +707,98 @@ function setGuest(){
   if(rname)rname.value=guest==='Quý Khách'?'':guest;
 }
 setGuest();
+
+/* V11.4 Sender Mode */
+function cleanGuestName(value){
+  return String(value||'').replace(/\s+/g,' ').trim().slice(0,80);
+}
+function buildGuestUrl(name){
+  const url=new URL(location.href);
+  url.searchParams.delete('send');
+  url.searchParams.delete('guest');
+  url.hash='';
+  url.searchParams.set('guest',cleanGuestName(name));
+  return url.toString();
+}
+function senderMessage(name,url){
+  return `💌 Trân trọng kính mời ${name} đến chung vui cùng Đức Hải & Ngọc Linh.\n\nXem thiệp tại:\n${url}`;
+}
+function initSenderMode(){
+  if(!senderMode)return;
+  const input=$('senderGuest');
+  const previewName=$('senderPreviewName');
+  const previewLink=$('senderPreviewLink');
+  const openLink=$('openGuestLink');
+  const status=$('senderStatus');
+  const shareBtn=$('shareInvite');
+  const copyBtn=$('copyInvite');
+
+  function current(){
+    const name=cleanGuestName(input.value);
+    if(!name){
+      previewName.textContent='Quý Khách';
+      previewLink.textContent='Nhập tên khách mời để tạo link…';
+      openLink.hidden=true;
+      openLink.removeAttribute('href');
+      return null;
+    }
+    const url=buildGuestUrl(name);
+    previewName.textContent=name;
+    previewLink.textContent=url;
+    openLink.href=url;
+    openLink.hidden=false;
+    return {name,url};
+  }
+  function requireInvite(){
+    const data=current();
+    if(data)return data;
+    status.textContent='Vui lòng nhập tên khách mời.';
+    input.focus();
+    return null;
+  }
+  async function copyText(text){
+    if(navigator.clipboard && window.isSecureContext){
+      await navigator.clipboard.writeText(text);
+      return;
+    }
+    const ta=document.createElement('textarea');
+    ta.value=text;ta.setAttribute('readonly','');
+    ta.style.position='fixed';ta.style.opacity='0';
+    document.body.appendChild(ta);ta.select();
+    document.execCommand('copy');ta.remove();
+  }
+
+  input.addEventListener('input',()=>{status.textContent='';current()});
+  input.addEventListener('keydown',e=>{if(e.key==='Enter')shareBtn.click()});
+
+  copyBtn.addEventListener('click',async()=>{
+    const data=requireInvite();if(!data)return;
+    try{
+      await copyText(data.url);
+      status.textContent=`✓ Đã copy link cho ${data.name}`;
+    }catch(e){status.textContent='Không copy tự động được — hãy giữ/chọn link ở phần xem trước.'}
+  });
+
+  shareBtn.addEventListener('click',async()=>{
+    const data=requireInvite();if(!data)return;
+    const shareData={title:`Thiệp cưới Đức Hải & Ngọc Linh — ${data.name}`,text:`💌 Trân trọng kính mời ${data.name} đến chung vui cùng Đức Hải & Ngọc Linh.`,url:data.url};
+    if(navigator.share){
+      try{
+        await navigator.share(shareData);
+        status.textContent=`✓ Đã mở chia sẻ cho ${data.name}`;
+        return;
+      }catch(e){
+        if(e && e.name==='AbortError'){status.textContent='Đã đóng bảng chia sẻ.';return;}
+      }
+    }
+    try{
+      await copyText(senderMessage(data.name,data.url));
+      status.textContent='Thiết bị không hỗ trợ Share trực tiếp — đã copy nội dung + link.';
+    }catch(e){status.textContent='Không thể mở Share. Hãy dùng nút Copy link.'}
+  });
+  current();
+}
+initSenderMode();
 
 
 const THEMES={
@@ -1098,19 +842,17 @@ function dynamic(message,type='active',duration=1450){
 }
 
 function sparkBurst(x,y,count=34){
-  if(PERF.reduceMotion)return;
   const layer=$('confettiLayer') || screen;
-  const safeCount=Math.min(count,PERF.sparkCap);
-  for(let i=0;i<safeCount;i++){
+  for(let i=0;i<count;i++){
     const s=document.createElement('i');
     s.className='spark';
     s.style.left=x+'px';s.style.top=y+'px';
     const a=Math.random()*Math.PI*2;
-    const d=38+Math.random()*(PERF.lowPower?86:135);
+    const d=50+Math.random()*160;
     s.style.setProperty('--x',Math.cos(a)*d+'px');
     s.style.setProperty('--y',Math.sin(a)*d+'px');
     s.style.background=['#f6c7d1','#ffe9ee','#fffefd','#efd9a3','#d98496'][Math.floor(Math.random()*5)];
-    layer.appendChild(s);setTimeout(()=>s.remove(),950);
+    layer.appendChild(s);setTimeout(()=>s.remove(),1000);
   }
 }
 
@@ -1210,17 +952,7 @@ function updateStoryProgress(){
   p=Math.max(0,Math.min(1,p));
   prog.style.setProperty('--progress',(p*100)+'%');
 }
-let appScrollTicking=false;
-function handleAppScroll(){
-  if(appScrollTicking)return;
-  appScrollTicking=true;
-  requestAnimationFrame(()=>{
-    updateStoryProgress();
-    updateIslandBySection();
-    appScrollTicking=false;
-  });
-}
-appScroll.addEventListener('scroll',handleAppScroll,{passive:true});
+appScroll.addEventListener('scroll',()=>{updateStoryProgress();updateIslandBySection();},{passive:true});
 updateStoryProgress();
 
 function updateIslandBySection(){
@@ -1278,7 +1010,7 @@ function liveBubble(name,text){
 }
 function startLive(){
   if(liveTimer)return;
-  liveTimer=setInterval(()=>liveBubble(liveNames[Math.floor(Math.random()*liveNames.length)],liveTexts[Math.floor(Math.random()*liveTexts.length)]),PERF.lowPower?6200:4300);
+  liveTimer=setInterval(()=>liveBubble(liveNames[Math.floor(Math.random()*liveNames.length)],liveTexts[Math.floor(Math.random()*liveTexts.length)]),3300);
 }
 $('sendQuick').addEventListener('click',()=>{
   const input=$('quickWish');
@@ -1291,41 +1023,36 @@ $('sendQuick').addEventListener('click',()=>{
 $('quickWish').addEventListener('keydown',e=>{if(e.key==='Enter')$('sendQuick').click()});
 
 function popHeart(x,y){
-  if(PERF.reduceMotion)return;
   const layer=$('heartLayer') || screen;
-  if(layer.children.length>PERF.heartCap+4)return;
   const h=document.createElement('div');
   h.className='heart';
   h.textContent=['💗','🌸','✨','💕','🤍'][Math.floor(Math.random()*5)];
   h.style.left=(x-13)+'px';h.style.top=(y-13)+'px';
-  layer.appendChild(h);setTimeout(()=>h.remove(),1350);
+  layer.appendChild(h);setTimeout(()=>h.remove(),1500);
 }
 function heartStorm(count=12){
-  const safeCount=Math.min(count,PERF.heartCap);
-  for(let i=0;i<safeCount;i++)setTimeout(()=>popHeart(screen.clientWidth/2+(Math.random()-.5)*170,screen.clientHeight*.68+(Math.random()-.5)*70),i*92);
+  for(let i=0;i<count;i++)setTimeout(()=>popHeart(screen.clientWidth/2+(Math.random()-.5)*190,screen.clientHeight*.68+(Math.random()-.5)*80),i*75);
 }
 $('heartBtn').addEventListener('click',e=>popHeart(e.clientX-screen.getBoundingClientRect().left,e.clientY-screen.getBoundingClientRect().top));
-$('topHeart').addEventListener('click',()=>heartStorm(6));
-$('homeHeart').addEventListener('click',()=>heartStorm(6));
-$('dockHeartHome').addEventListener('click',()=>heartStorm(6));
-$('moreHeart').addEventListener('click',()=>heartStorm(9));
+$('topHeart').addEventListener('click',()=>heartStorm(10));
+$('homeHeart').addEventListener('click',()=>heartStorm(10));
+$('dockHeartHome').addEventListener('click',()=>heartStorm(10));
+$('moreHeart').addEventListener('click',()=>heartStorm(18));
 
 function makePetal(){
-  if(PERF.reduceMotion)return;
   const layer=$('petalLayer') || screen;
-  if(layer.children.length>PERF.petalLimit)return;
   const p=document.createElement('div');
   p.className='petal';
   p.textContent=['🌸','♡','✨','💗','✦'][Math.floor(Math.random()*5)];
   p.style.left=Math.random()*100+'%';
   p.style.top='-42px';
-  p.style.fontSize=(12+Math.random()*(PERF.lowPower?7:10))+'px';
-  p.style.setProperty('--d',(8+Math.random()*5)+'s');
-  p.style.setProperty('--x',((Math.random()-.5)*(PERF.lowPower?86:120))+'px');
-  p.style.setProperty('--r',((Math.random()>.5?1:-1)*(110+Math.random()*190))+'deg');
-  layer.appendChild(p);setTimeout(()=>p.remove(),13500);
+  p.style.fontSize=(13+Math.random()*12)+'px';
+  p.style.setProperty('--d',(6+Math.random()*5)+'s');
+  p.style.setProperty('--x',((Math.random()-.5)*130)+'px');
+  p.style.setProperty('--r',((Math.random()>.5?1:-1)*(150+Math.random()*230))+'deg');
+  layer.appendChild(p);setTimeout(()=>p.remove(),12000);
 }
-function startPetals(){if(petalTimer || PERF.reduceMotion)return;petalTimer=setInterval(makePetal,PERF.petalInterval)}
+function startPetals(){if(petalTimer)return;petalTimer=setInterval(makePetal,850)}
 
 $('openGift').addEventListener('click',()=>{$('envelope').classList.toggle('open');dynamic($('envelope').classList.contains('open')?'🎁 Phong bì đã mở':'🎁 Gift Wallet','active',1200);sparkBurst(screen.clientWidth/2,screen.clientHeight*.55,18)});
 
@@ -1338,50 +1065,6 @@ document.querySelectorAll('.wedding-app a[href^="#"]').forEach(link=>{
     e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'});
   });
 });
-
-
-// V12 Lite: continuous hearts, but capped to avoid mobile/GitHub Pages lag.
-const floatingHeartsAllWeb=document.getElementById('floatingHeartsAllWeb');
-let floatingHeartsAllTimer=null;
-
-function spawnFloatingHeartAllWeb(){
-  if(!floatingHeartsAllWeb || PERF.reduceMotion)return;
-  if(floatingHeartsAllWeb.children.length>=PERF.maxFloatingHearts)return;
-  const heart=document.createElement('span');
-  const filled=Math.random()>.82;
-  heart.className='float-heart-all'+(filled?' fill':'')+(Math.random()>.78?' tiny':'');
-  heart.textContent=filled?'♥':'♡';
-
-  const size=14+Math.random()*(PERF.lowPower?17:23);
-  const opacity=0.22+Math.random()*(PERF.lowPower?0.22:0.30);
-  const duration=10+Math.random()*6;
-  const drift=(Math.random()*(PERF.lowPower?84:130)-(PERF.lowPower?42:65));
-  const startRot=(Math.random()*44-22);
-  const endRot=startRot+(Math.random()*86-43);
-
-  heart.style.setProperty('--x',(4+Math.random()*92).toFixed(2)+'%');
-  heart.style.setProperty('--s',size.toFixed(1)+'px');
-  heart.style.setProperty('--o',opacity.toFixed(2));
-  heart.style.setProperty('--dur',duration.toFixed(2)+'s');
-  heart.style.setProperty('--drift',drift.toFixed(1)+'px');
-  heart.style.setProperty('--rot',startRot.toFixed(1)+'deg');
-  heart.style.setProperty('--rotEnd',endRot.toFixed(1)+'deg');
-  heart.style.setProperty('--endScale',(1.02+Math.random()*0.34).toFixed(2));
-
-  floatingHeartsAllWeb.appendChild(heart);
-  setTimeout(()=>heart.remove(),Math.ceil(duration*1000)+450);
-}
-
-function startFloatingHeartsAllWeb(){
-  if(!floatingHeartsAllWeb || floatingHeartsAllTimer || PERF.reduceMotion)return;
-  for(let i=0;i<PERF.initialHearts;i++)setTimeout(spawnFloatingHeartAllWeb,i*210);
-  floatingHeartsAllTimer=setInterval(()=>{
-    spawnFloatingHeartAllWeb();
-    if(!PERF.lowPower && Math.random()>.72)setTimeout(spawnFloatingHeartAllWeb,220);
-  },PERF.floatingInterval);
-}
-startFloatingHeartsAllWeb();
-
 </script>
 </body>
 </html>
